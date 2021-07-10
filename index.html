@@ -32,7 +32,6 @@
   </head>
   <body>
     <!--
-      submenu 
       slider top
       fixed scroll menu
     -->
@@ -67,7 +66,43 @@
                     <a href="blog.html" class="header__nav-link">BLOG</a>
                   </li>
                   <li class="header__nav-item">
-                    <a href="course.html" class="header__nav-link">COURSE</a>
+                    <a href="course.html" class="header__nav-link">
+                      <span>COURSE</span>
+                      <i class="fa fa-caret-down"></i>
+                    </a>
+                    <!-- sub menu -->
+                    <ul class="nav-child__list">
+                      <li class="nav-child__item">
+                        <a href="#" class="nav-child__link">
+                          <i class="fa fa-chevron-right"></i>
+                          <span>Math</span>
+                        </a>
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="#" class="nav-child__link">
+                          <i class="fa fa-chevron-right"></i>
+                          <span>Science</span>
+                        </a>
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="#" class="nav-child__link">
+                          <i class="fa fa-chevron-right"></i>
+                          <span>Life Skills</span>
+                        </a>
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="#" class="nav-child__link">
+                          <i class="fa fa-chevron-right"></i>
+                          <span>Technology</span>
+                        </a>
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="#" class="nav-child__link">
+                          <i class="fa fa-chevron-right"></i>
+                          <span>Law</span>
+                        </a>
+                      </li>
+                    </ul>
                   </li>
                   <li class="header__nav-item">
                     <a href="event.html" class="header__nav-link">EVENTS</a>
@@ -174,19 +209,48 @@
       </div>
       <!-- header img -->
       <div class="header__img" id="top">
-        <div class="header__img-item">
-          <img src="assets/image/slider-home/slide1.jpg" alt="" />
-          <div class="header__img-content">
-            <h3 class="header__img-heading">THE BEST SOLUTION</h3>
-            <p class="header__img-subhead">TO CREATE & SELL ONLINE COURSES</p>
-            <p class="header__img-desc">
-              Academia understands customers - helps them show their advantages
-              most effective by making their website be unquie to attract
-              potential student, keep long-term students who will become
-              greatest marketers for business.
-            </p>
-            <a href="#" class="btn btn-view-course btn-form">VIEW COURSES</a>
-            <a href="#" class="btn btn-purchase-now btn-form">PURCHASE NOW</a>
+        <div class="header__img-list owl-carousel owl-theme">
+          <div class="header__img-item">
+            <img src="assets/image/slider-home/slide1.jpg" alt="imgslider1" />
+            <div class="header__img-content">
+              <h3 class="header__img-heading">THE BEST SOLUTION</h3>
+              <p class="header__img-subhead">TO CREATE & SELL ONLINE COURSES</p>
+              <p class="header__img-desc">
+                Academia understands customers - helps them show their
+                advantages most effective by making their website be unquie to
+                attract potential student, keep long-term students who will
+                become greatest marketers for business.
+              </p>
+              <a href="#" class="btn btn-view-course btn-form">VIEW COURSES</a>
+              <a href="#" class="btn btn-purchase-now btn-form">PURCHASE NOW</a>
+            </div>
+          </div>
+          <div class="header__img-item">
+            <img src="assets/image/slider-home/slide2.jpg" alt="sliderimg2" />
+            <div class="header__img-content header__img-content--right">
+              <p class="header__img-subhead">WHAT IS BEST FOR YOUR</p>
+              <h3 class="header__img-heading">LEARNING AT UNIVERSITY</h3>
+              <p class="header__img-desc">
+                WE TAKE PRIDE IN SERVING OUR STUDENTS SAFELY.
+              </p>
+              <a href="#" class="btn btn-view-course btn-form">VIEW COURSES</a>
+              <a href="#" class="btn btn-purchase-now btn-form">PURCHASE NOW</a>
+            </div>
+          </div>
+          <div class="header__img-item">
+            <img src="assets/image/slider-home/slide3.jpg" alt="sliderimg3" />
+            <div class="header__img-content header__img-content--center">
+              <h3 class="header__img-heading">MEET NOW FRIENDS</h3>
+              <p class="header__img-subhead">AND STUDY WITH EXPERTS</p>
+              <p class="header__img-desc">
+                Nothing is better than having friends study together. Each
+                student can learn from others through by teamwork building and
+                playing interesting games. Following instruction of experts, you
+                and friends will gain best scores.
+              </p>
+              <a href="#" class="btn btn-view-course btn-form">VIEW COURSES</a>
+              <a href="#" class="btn btn-purchase-now btn-form">PURCHASE NOW</a>
+            </div>
           </div>
         </div>
       </div>
@@ -1390,6 +1454,7 @@
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script>
+      // slider for lastestnew
       var owl = $(".lastest-new__list");
       owl.owlCarousel({
         items: 3,
@@ -1419,6 +1484,7 @@
       $(".stop").on("click", function () {
         owl.trigger("stop.owl.autoplay");
       });
+      // slider for popular-course
       var owl = $(".popular-courses__list");
       owl.owlCarousel({
         items: 3,
@@ -1440,6 +1506,25 @@
             items: 3,
           },
         },
+      });
+      $(".play").on("click", function () {
+        owl.trigger("play.owl.autoplay", [4000]);
+      });
+      $(".stop").on("click", function () {
+        owl.trigger("stop.owl.autoplay");
+      });
+      // slide for header img
+      var owl = $(".header__img-list");
+      owl.owlCarousel({
+        items: 1,
+        loop: true,
+        nav: true,
+        dots: false,
+        margin: 0,
+        autoplay: true,
+        autoplayTimeout: 4000,
+        autoplayHoverPause: true,
+        animateOut: "fadeOut",
       });
       $(".play").on("click", function () {
         owl.trigger("play.owl.autoplay", [4000]);

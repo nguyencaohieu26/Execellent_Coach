@@ -97,11 +97,11 @@
     const mobileItem    = document.querySelectorAll(".mobile__nav-item")
     btn__OpenMenu.addEventListener("click",function(){
       mobileNav.classList.add("active");
-      overlay.style.display = "block";
+      overlay.classList.add("active");
     })
     window.addEventListener("click",function(e){
       if(e.target == overlay){
-      overlay.style.display = "none";
+      overlay.classList.remove("active");
       mobileNav.classList.remove("active");
       }
     })
