@@ -76,18 +76,18 @@
         choseActive(index,btn_testimonials__choseImg)
       })
     })
-    function autoPlay(){
-    var auto = setInterval(run,5000);
-    function run(){
-      testimoIndex++;
-      if(testimoIndex > testimonials__item.length - 1){
-        testimoIndex = 0;
-      }
-      choseActive(testimoIndex,testimonials__item);
-      choseActive(testimoIndex,btn_testimonials__choseImg)
-    }
-    }
-    autoPlay();
+    // function autoPlay(){
+    // var auto = setInterval(run,5000);
+    // function run(){
+    //   testimoIndex++;
+    //   if(testimoIndex > testimonials__item.length - 1){
+    //     testimoIndex = 0;
+    //   }
+    //   choseActive(testimoIndex,testimonials__item);
+    //   choseActive(testimoIndex,btn_testimonials__choseImg)
+    // }
+    // }
+    // autoPlay();
 // ---------------------------
 // menu toggle
     const btn__OpenMenu = document.querySelector(".menu__toggle");

@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <!-- gg font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- link base style -->
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <!-- link stylesheet -->
+    <link rel="stylesheet" href="assets/css/Home/home.css" />
+    <!-- link stylesheet responsive -->
+    <link rel="stylesheet" href="assets/css/Home/homeresponsive.css" />
+    <!-- link stylesheet for blog -->
+    <link rel="stylesheet" href="assets/css/Blog/blog.css" />
+    <!-- link responsive for blog -->
+    <link rel="stylesheet" href="assets/css/Blog/blogresponsive.css" />
+  </head>
+  <body>
+    <!-- 
+      add thêm gallery cho 1 blog riêng
+      add thêm 1 video nếu có thể
+     -->
+    <section class="blog__page">
+      <!-- header -->
+      <header class="header">
+        <div class="row">
+          <!-- menu toggle -->
+          <div class="menu__toggle">
+            <i class="fa fa-bars"></i>
+          </div>
+          <!-- header logo -->
+          <div class="header__logo">
+            <a href="index.html" class="header__logo-link">
+              <img
+                src="assets/image/Academica_logo.png"
+                alt="Academica_Logo"
+                class="header__logo-img"
+              />
+            </a>
+          </div>
+          <!-- menu -->
+          <div class="header__menu">
+            <div class="header__menu-details">
+              <!-- nav -->
+              <nav class="header__nav">
+                <ul class="header__nav-list">
+                  <li class="header__nav-item">
+                    <a href="index.html" class="header__nav-link">HOME</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="blog.html" class="header__nav-link">BLOG</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="course.html" class="header__nav-link">
+                      <span>COURSE</span>
+                      <i class="fa fa-caret-down"></i>
+                    </a>
+                    <!-- sub menu -->
+                    <ul class="nav-child__list">
+                      <li class="nav-child__item">
+                        <a href="#" class="nav-child__link">
+                          <i class="fa fa-chevron-right"></i>
+                          <span>Math</span>
+                        </a>
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="#" class="nav-child__link">
+                          <i class="fa fa-chevron-right"></i>
+                          <span>Science</span>
+                        </a>
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="#" class="nav-child__link">
+                          <i class="fa fa-chevron-right"></i>
+                          <span>Life Skills</span>
+                        </a>
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="#" class="nav-child__link">
+                          <i class="fa fa-chevron-right"></i>
+                          <span>Technology</span>
+                        </a>
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="#" class="nav-child__link">
+                          <i class="fa fa-chevron-right"></i>
+                          <span>Law</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="event.html" class="header__nav-link">EVENTS</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="teacher.html" class="header__nav-link">TEACHERS</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="about.html" class="header__nav-link">ABOUT</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="contact.html" class="header__nav-link">CONTACT</a>
+                  </li>
+                </ul>
+              </nav>
+              <!-- menu icon -->
+              <div class="menu__icon">
+                <div class="cart__icon">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="search__icon">
+                  <i class="fas fa-search"></i>
+                </div>
+                <div class="lock__icon">
+                  <i class="fas fa-lock"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- mobile nav -->
+          <div class="header-mobile__nav">
+            <!-- search bar -->
+            <form action="" class="mobile__searchbar">
+              <input type="text" placeholder="Search..." />
+              <button class="btn btn-searchbar">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+            <!-- mobile nav -->
+            <nav class="mobile-nav">
+              <ul class="mobile__nav-list">
+                <li class="mobile__nav-item">
+                  <a href="index.html" class="mobile__nav-link">HOME</a>
+                </li>
+                <li class="mobile__nav-item">
+                  <a href="#" class="mobile__nav-link">BLOG</a>
+                </li>
+                <li class="mobile__nav-item">
+                  <button class="mobile__nav-link">
+                    <span>COURSE</span>
+                    <i class="fa fa-chevron-down"></i>
+                  </button>
+                  <!-- second menu -->
+                  <ul class="mobile__nav-child-list">
+                    <li class="mobile__nav-child-item">
+                      <a href="#" class="mobile__nav-child-link">Math</a>
+                    </li>
+                    <li class="mobile__nav-child-item">
+                      <a href="#" class="mobile__nav-child-link">Science</a>
+                    </li>
+                    <li class="mobile__nav-child-item">
+                      <a href="#" class="mobile__nav-child-link">Life Skills</a>
+                    </li>
+                    <li class="mobile__nav-child-item">
+                      <a href="#" class="mobile__nav-child-link">Technology</a>
+                    </li>
+                    <li class="mobile__nav-child-item">
+                      <a href="#" class="mobile__nav-child-link">Law</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="mobile__nav-item">
+                  <a href="#" class="mobile__nav-link">EVENTS</a>
+                </li>
+                <li class="mobile__nav-item">
+                  <a href="#" class="mobile__nav-link">TEACHERS</a>
+                </li>
+                <li class="mobile__nav-item">
+                  <a href="#" class="mobile__nav-link">ABOUT</a>
+                </li>
+                <li class="mobile__nav-item">
+                  <a href="#" class="mobile__nav-link">CONTACT</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!-- overlay -->
+      <div class="overlay"></div>
+      <!-- ------------------- -->
+      <!-- small info -->
+      <div class="small-info">
+        <div class="row">
+          <a href="mailto:infoacademica@gmail.com" class="small-info__email">
+            <i class="fab fa-telegram-plane"></i>
+            <span>Academica@gmail.com</span>
+          </a>
+          <p class="calendar-info">
+            <i class="far fa-clock"></i>
+            <span>MON - SAT: 9:00 - 18:00</span>
+          </p>
+        </div>
+      </div>
+      <!-- header img -->
+      <div class="header__img-blog" id="top1">
+        <div class="header__img-bars">
+          <p class="header__blog-title">BLOG</p>
+          <p class="header__blog-sub">
+            <a href="index.html" class="blog-back">
+              <i class="fa fa-home"></i>
+            </a>
+            <i class="fa fa-chevron-right"></i>
+            <span>BLOG</span>
+          </p>
+        </div>
+      </div>
+      <main class="main__blog">
+        <!-- main content -->
+        <div class="main__blog-details">
+          <div class="row">
+            <div class="blog-aside">
+              <!-- search -->
+              <div class="blog-aside__search">
+                <h4 class="blog__aside-heading">SEARCH IN SITE</h4>
+                <form action="" class="blog-form">
+                  <input type="text" placeholder="Enter your keywork" />
+                  <button class="btn btn-search-aside">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </form>
+              </div>
+              <!-- recent posts -->
+              <div class="blog-aside__recentpost">
+                <h4 class="blog__aside-heading">RECENT POSTS</h4>
+                <div class="recent-post__list">
+                  <div class="recent-post__item">
+                    <a href="#" class="recent-post__title"
+                      >NEW SCIENCE REASEARCH FACILITY IN NEWYORK AMERICAN</a
+                    >
+                    <div class="recent-post__feature">
+                      <div class="feature-post__item">
+                        <i class="fa fa-calendar-alt"></i>
+                        <span>NOVEMBER 3, 2019</span>
+                      </div>
+                      <div class="feature-post__item">
+                        <i class="fa fa-comments"></i>
+                        <span>0</span>
+                      </div>
+                      <div class="feature-post__item">
+                        <i class="fa fa-eye"></i>
+                        <span>3033</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="recent-post__item">
+                    <a href="#" class="recent-post__title"
+                      >NEW YORK SCHOOLS WONDER: HOW WHITE IS TO WHITE ?</a
+                    >
+                    <div class="recent-post__feature">
+                      <div class="feature-post__item">
+                        <i class="fa fa-calendar-alt"></i>
+                        <span>AUGUST 1, 2020</span>
+                      </div>
+                      <div class="feature-post__item">
+                        <i class="fa fa-comments"></i>
+                        <span>0</span>
+                      </div>
+                      <div class="feature-post__item">
+                        <i class="fa fa-eye"></i>
+                        <span>3100</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="recent-post__item">
+                    <a href="#" class="recent-post__title"
+                      >TEACHING BRONX STUDENTS THE LANGUAGE OF COMPUTERS</a
+                    >
+                    <div class="recent-post__feature">
+                      <div class="feature-post__item">
+                        <i class="fa fa-calendar-alt"></i>
+                        <span>JULY 27, 2020</span>
+                      </div>
+                      <div class="feature-post__item">
+                        <i class="fa fa-comments"></i>
+                        <span>0</span>
+                      </div>
+                      <div class="feature-post__item">
+                        <i class="fa fa-eye"></i>
+                        <span>3148</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- categories -->
+              <div class="blog-aside__categories">
+                <h4 class="blog__aside-heading">SEARCH IN SITE</h4>
+                <ul class="blog-categories__list">
+                  <li class="blog-categories__item">
+                    <a href="#" class="blog-categories__link"> EXAM STREETS </a>
+                    <span>2</span>
+                  </li>
+                  <li class="blog-categories__item">
+                    <a href="#" class="blog-categories__link"
+                      >LANGUAGE SCIENCE</a
+                    >
+                    <span>4</span>
+                  </li>
+                  <li class="blog-categories__item">
+                    <a href="#" class="blog-categories__link"
+                      >SCHOOL PSYCHOLOGY</a
+                    >
+                    <span>6</span>
+                  </li>
+                  <li class="blog-categories__item">
+                    <a href="#" class="blog-categories__link"
+                      >STUDENT GUIDANCE</a
+                    >
+                    <span>4</span>
+                  </li>
+                  <li class="blog-categories__item">
+                    <a href="#" class="blog-categories__link">UNCATEGORIZED</a>
+                    <span>2</span>
+                  </li>
+                  <li class="blog-categories__item">
+                    <a href="#" class="blog-categories__link"
+                      >VOCATIONAL COUNSELING</a
+                    >
+                    <span>5</span>
+                  </li>
+                  <li class="blog-categories__item">
+                    <a href="#" class="blog-categories__link">
+                      YOUTH SCIENCE
+                    </a>
+                    <span>4</span>
+                  </li>
+                </ul>
+              </div>
+              <!-- banner -->
+              <div class="blog-banner">
+                <a href="index.html">
+                  <img
+                    src="assets/image/blog-img/neonbrand-1-aA2Fadydc-unsplash.jpg"
+                    alt="blogbannerimg"
+                  />
+                </a>
+                <div class="banner-logo">
+                  <img src="" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="blog-main-content">
+              <div class="blog-content__list">
+                <div class="blog-content__item">
+                  <div class="blog-content__media">
+                    <img
+                      src="assets/image/largerImg/largerimg1.jpg"
+                      alt="blogimg1"
+                    />
+                    <i class="fas fa-expand-alt btn-expand-img"></i>
+                    <div class="blog-content-icon">
+                      <i class="fas fa-file-alt"></i
+                      ><span>NOVEMBER 3, 2020</span>
+                    </div>
+                  </div>
+                  <div class="blog-item__details">
+                    <a href="#"
+                      >FRIENDLY SCHOOLS OPEN WITH MODERN TEACHING METHODS</a
+                    >
+                    <p class="blog-item__para">
+                      As with most professions today, there are rapid
+                      developments in teaching that are being driven by social
+                      and technological changes. Keeping up to date with these
+                      developments within education will
+                    </p>
+                    <div class="blog-item__feature">
+                      <div class="blog-item-feature__item">
+                        <i class="fa fa-user"></i>
+                        <a href="#">ASHRAF BADRY</a>
+                      </div>
+                      <div class="blog-item-feature__item">
+                        <i class="fa fa-comments"></i>
+                        <span>2</span>
+                      </div>
+                      <div class="blog-item-feature__item">
+                        <i class="fa fa-eye"></i>
+                        <span>3100</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="blog-content__item">
+                  <div class="blog-item__details">
+                    <a href="#"
+                      >ALONG COMMUNICATE DIRECTLY WITH EXPERIENCE TEACHERS</a
+                    >
+                    <p class="blog-item__para">
+                      Parental involvement enhances student success. A first
+                      step toward involvement is communicating with your child’s
+                      teacher. Effective communication consists of meeting with
+                      the teacher, being a
+                    </p>
+                    <div class="blog-item__feature">
+                      <div class="blog-item-feature__item">
+                        <i class="fa fa-user"></i>
+                        <a href="#">ASHRAF BADRY</a>
+                      </div>
+                      <div class="blog-item-feature__item">
+                        <i class="fa fa-comments"></i>
+                        <span>4</span>
+                      </div>
+                      <div class="blog-item-feature__item">
+                        <i class="fa fa-eye"></i>
+                        <span>3134</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="blog-content__media blog-change-position">
+                    <img
+                      src="assets/image/largerImg/largerimg2.jpg"
+                      alt="blogimg2"
+                    />
+                    <i class="fas fa-expand-alt btn-expand-img"></i>
+                    <div class="blog-content-icon">
+                      <i class="fas fa-file-alt"></i>
+                      <span>NOVEMBER 3, 2020</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="blog-content__item">
+                  <div class="blog-content__media">
+                    <img
+                      src="assets/image/largerImg/largerimg3.jpg"
+                      alt="blogimg3"
+                    />
+                    <i class="fas fa-expand-alt btn-expand-img"></i>
+                    <div class="blog-content-icon">
+                      <i class="fas fa-file-alt"></i>
+                      <span>NOVEMBER 3, 2020</span>
+                    </div>
+                  </div>
+                  <div class="blog-item__details">
+                    <a href="#"
+                      >NEW SCIENCE RESEARCH FACILITY IN NEWYORK AMERICAN</a
+                    >
+                    <p class="blog-item__para">
+                      The ASRC focuses on CUNY initiatives in five dynamic
+                      fields of applied science: Nanoscience, Photonics,
+                      Structural Biology, Neuroscience, and Environmental
+                      Sciences. Through its innovative
+                    </p>
+                    <div class="blog-item__feature">
+                      <div class="blog-item-feature__item">
+                        <i class="fa fa-user"></i>
+                        <a href="#">ASHRAF BADRY</a>
+                      </div>
+                      <div class="blog-item-feature__item">
+                        <i class="fa fa-comments"></i>
+                        <span>2</span>
+                      </div>
+                      <div class="blog-item-feature__item">
+                        <i class="fa fa-eye"></i>
+                        <span>3033</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="blog-content__item">
+                  <div class="blog-item__details">
+                    <a href="#"
+                      >NEW YORK SCHOOLS WONDER: HOW WHITE IS TO WHITE ?</a
+                    >
+                    <p class="blog-item__para">
+                      In New York, Mayor Bill de Blasio and Carmen Fariña, the
+                      schools chancellor, have disappointed school diversity
+                      advocates by failing to make integration a priority. The
+                      set-asides plan, approved by Ms. Fariña
+                    </p>
+                    <div class="blog-item__feature">
+                      <div class="blog-item-feature__item">
+                        <i class="fa fa-user"></i>
+                        <a href="#">ASHRAF BADRY</a>
+                      </div>
+                      <div class="blog-item-feature__item">
+                        <i class="fa fa-comments"></i>
+                        <span>2</span>
+                      </div>
+                      <div class="blog-item-feature__item">
+                        <i class="fa fa-eye"></i>
+                        <span>2800</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="blog-content__media blog-change-position">
+                    <img
+                      src="assets/image/largerImg/largerimg4.jpg"
+                      alt="blogimg4"
+                    />
+                    <i class="fas fa-expand-alt btn-expand-img"></i>
+                    <div class="blog-content-icon">
+                      <i class="fas fa-microphone"></i>
+                      <span>NOVEMBER 3, 2020</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="blog-content__item">
+                  <div class="blog-content__media">
+                    <img
+                      src="assets/image/largerImg/largerimg5.jpg"
+                      alt="blogimg5"
+                    />
+                    <i class="fas fa-expand-alt btn-expand-img"></i>
+                    <div class="blog-content-icon">
+                      <i class="far fa-file-image"></i>
+                      <span>JULY 6, 2020</span>
+                    </div>
+                  </div>
+                  <div class="blog-item__details">
+                    <a href="#"
+                      >CAN SMART WATCH TAKE THE MARKET OF MOBILE IN 5 YEARS</a
+                    >
+                    <p class="blog-item__para">
+                      The stumbling block is that it will take several years
+                      before there are enough sensors in homes, businesses and
+                      vehicles to make it worth the trouble to strap on a
+                      smartwatch. “For watches to become more popular and more
+                      mainstream.
+                    </p>
+                    <div class="blog-item__feature">
+                      <div class="blog-item-feature__item">
+                        <i class="fa fa-user"></i>
+                        <a href="#">ASHRAF BADRY</a>
+                      </div>
+                      <div class="blog-item-feature__item">
+                        <i class="fa fa-comments"></i>
+                        <span>6</span>
+                      </div>
+                      <div class="blog-item-feature__item">
+                        <i class="fa fa-eye"></i>
+                        <span>3333</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="blog-content__item">
+                  <div class="blog-item__details">
+                    <a href="#"
+                      >HOW TO START A DIGITAL COMMUNITY RADIO TO ENRICH ?</a
+                    >
+                    <p class="blog-item__para">
+                      Community radio stations typically cover a small
+                      geographical area with a coverage radius of up to 5km and
+                      run on a not-for-profit basis. They can cater for whole
+                      communities or for different areas of
+                    </p>
+                    <div class="blog-item__feature">
+                      <div class="blog-item-feature__item">
+                        <i class="fa fa-user"></i>
+                        <a href="#">ASHRAF BADRY</a>
+                      </div>
+                      <div class="blog-item-feature__item">
+                        <i class="fa fa-comments"></i>
+                        <span>2</span>
+                      </div>
+                      <div class="blog-item-feature__item">
+                        <i class="fa fa-eye"></i>
+                        <span>2800</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="blog-content__media blog-change-position">
+                    <img
+                      src="assets/image/largerImg/largerimg6.jpg"
+                      alt="blogimg4"
+                    />
+                    <i class="fas fa-expand-alt btn-expand-img"></i>
+                    <div class="blog-content-icon">
+                      <i class="fas fa-microphone"></i>
+                      <span>NOVEMBER 3, 2020</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="blog-content__item">
+                  <div class="blog-content__media">
+                    <img
+                      src="assets/image/largerImg/largerimg7.jpg"
+                      alt="blogimg7"
+                    />
+                    <i class="fas fa-expand-alt btn-expand-img"></i>
+                    <div class="blog-content-icon">
+                      <i class="far fa-file-image"></i>
+                      <span>JULY 6, 2020</span>
+                    </div>
+                  </div>
+                  <div class="blog-item__details">
+                    <a href="#"
+                      >BRIDGING A DIGITAL DIVIDE THAT LEAVES SCHOOLCHILDREN
+                      BEHIND</a
+                    >
+                    <p class="blog-item__para">
+                      With many educators pushing for students to use resources
+                      on the Internet with class work, the federal government is
+                      now grappling with a stark disparity in access to
+                      technology, between students who have
+                    </p>
+                    <div class="blog-item__feature">
+                      <div class="blog-item-feature__item">
+                        <i class="fa fa-user"></i>
+                        <a href="#">ASHRAF BADRY</a>
+                      </div>
+                      <div class="blog-item-feature__item">
+                        <i class="fa fa-comments"></i>
+                        <span>6</span>
+                      </div>
+                      <div class="blog-item-feature__item">
+                        <i class="fa fa-eye"></i>
+                        <span>3333</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="blog__panigation">
+                <a href="#" class="panigation__link panigation__link--active"
+                  >1</a
+                >
+                <a href="#" class="panigation__link">2</a>
+                <a href="#" class="panigation__link">3</a>
+                <a href="#" class="panigation__link">Next</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- view larger img -->
+      <div class="blog-largerimg">
+        <div class="close__largerblogimg">
+          <i class="fa fa-times-circle"></i>
+        </div>
+        <div class="blog-largerimg-inner">
+          <img src="" alt="" />
+        </div>
+      </div>
+      <!-- movetotop -->
+      <div class="movetotop">
+        <a href="#top1">
+          <i class="fas fa-arrow-circle-up"></i>
+        </a>
+      </div>
+      <!-- img larger -->
+      <div class="footer-img__larger">
+        <div class="footer-img__larger-inner">
+          <img src="" alt="" class="img-footer-larger" />
+          <div class="close__imglarger">
+            <i class="fas fa-times-circle"></i>
+          </div>
+          <div class="larger-btns">
+            <i class="fa fa-chevron-left btn-prev-larger"></i>
+            <i class="fas fa-th-large btn-larger-gallery"></i>
+            <i class="fa fa-chevron-right btn-next-larger"></i>
+          </div>
+        </div>
+        <div class="larger-list__img">
+          <div class="larger-list__img-inner">
+            <div class="close__larger-img">
+              <i class="fa fa-times"></i>
+            </div>
+            <div class="color-header"></div>
+            <div class="gallery-larger-img">
+              <img
+                src="assets/image/largerImg/largerimg1.jpg"
+                alt="footerimg1"
+              />
+              <img
+                src="assets/image/largerImg/largerimg2.jpg"
+                alt="footerimg2"
+              />
+              <img
+                src="assets/image/largerImg/largerimg3.jpg"
+                alt="footerimg3"
+              />
+              <img
+                src="assets/image/largerImg/largerimg4.jpg"
+                alt="footerimg4"
+              />
+              <img
+                src="assets/image/largerImg/largerimg5.jpg"
+                alt="footerimg5"
+              />
+              <img
+                src="assets/image/largerImg/largerimg6.jpg"
+                alt="footerimg6"
+              />
+              <img
+                src="assets/image/largerImg/largerimg7.jpg"
+                alt="footerimg7"
+              />
+              <img
+                src="assets/image/largerImg/largerimg8.jpg"
+                alt="footerimg8"
+              />
+              <img
+                src="assets/image/largerImg/largerimg9.jpg"
+                alt="footerimg9"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+      <footer class="footer">
+        <div class="row">
+          <div class="footer-details">
+            <div class="footer__logo">
+              <a href="index.html" class="footer__logo-link">
+                <img
+                  src="assets/image/footer-logo.png"
+                  alt="academica_logo"
+                  class="footer__logo-img"
+                />
+              </a>
+            </div>
+            <div class="footer__top">
+              <div class="footer__top-left">
+                <div class="footer__top-left-top">
+                  <h4 class="footer__heading">ABOUT US</h4>
+                  <p class="footer__desc">
+                    We are an experienced team creating great, unique and easy
+                    to set up templates for WordPress. We are a small, young and
+                    super driven team that likes to make great things happen.
+                  </p>
+                </div>
+                <div class="footer__top-left-bottom">
+                  <h4 class="footer__heading">GET IN TOUCH</h4>
+                  <ul class="footer-social__info">
+                    <li class="footer-social__item">
+                      <i class="fa fa-map-marked"></i>
+                      <span>
+                        G5 Technology JSC, Room 1101, Glory Palace Apartment,
+                        Truong Thi Ward, Vinh City, Nghe An Province,
+                        VietNam(42000)
+                      </span>
+                    </li>
+                    <li class="footer-social__item">
+                      <i class="fa fa-phone"></i>
+                      <span>(+84) 388-969-888 </span>
+                    </li>
+                    <li class="footer-social__item">
+                      <i class="fa fa-envelope"></i>
+                      <span>Academica@gmail.com</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer__top-right">
+                <div class="footer__top-right-top">
+                  <h4 class="footer__heading">NEWSLETTER</h4>
+                  <form action="" class="footer-form">
+                    <input type="text" placeholder="YOUR NAME" />
+                    <input type="email" placeholder="EMAIL ADDRESS" />
+                    <button type="button">THANK YOU</button>
+                  </form>
+                </div>
+                <div class="footer__top-right-bottom">
+                  <h4 class="footer__heading">OUR FLICKR</h4>
+                  <div class="footer__gallery">
+                    <img
+                      src="assets/image/largerImg/largerimg1.jpg"
+                      alt="footerimg1"
+                    />
+                    <img
+                      src="assets/image/largerImg/largerimg2.jpg"
+                      alt="footerimg2"
+                    />
+                    <img
+                      src="assets/image/largerImg/largerimg3.jpg"
+                      alt="footerimg3"
+                    />
+                    <img
+                      src="assets/image/largerImg/largerimg4.jpg"
+                      alt="footerimg4"
+                    />
+                    <img
+                      src="assets/image/largerImg/largerimg5.jpg"
+                      alt="footerimg5"
+                    />
+                    <img
+                      src="assets/image/largerImg/largerimg6.jpg"
+                      alt="footerimg6"
+                    />
+                    <img
+                      src="assets/image/largerImg/largerimg7.jpg"
+                      alt="footerimg7"
+                    />
+                    <img
+                      src="assets/image/largerImg/largerimg8.jpg"
+                      alt="footerimg8"
+                    />
+                    <img
+                      src="assets/image/largerImg/largerimg9.jpg"
+                      alt="footerimg9"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__bottom">
+              <nav class="footer__nav">
+                <ul class="footer__nav-list">
+                  <li class="footer__nav-item">
+                    <a href="index.html" class="footer__nav-link">HOME</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="course.html" class="footer__nav-link">COURSE</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="event.html" class="footer__nav-link">EVENTS</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="blog.html" class="footer__nav-link">BLOG</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="about.html" class="footer__nav-link">ABOUT</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/home.js"></script>
+    <script src="assets/js/blog.js"></script>
+  </body>
+</html>

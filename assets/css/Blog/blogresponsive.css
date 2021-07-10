@@ -1,0 +1,25 @@
+@media only screen and (max-width: 1000px) {
+  .main__blog-details .row {
+    grid-template-columns: 1fr;
+  }
+  .blog-main-content {
+    order: -1;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .blog-content__media img {
+    min-height: 24rem;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .blog-content__item {
+    grid-template-columns: 1fr;
+  }
+  .blog-change-position {
+    order: -1;
+  }
+  .header__blog-title {
+    font-size: 2.5rem;
+    padding-left: 3rem;
+  }
+}
