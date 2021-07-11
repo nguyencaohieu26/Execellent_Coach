@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog</title>
+    <title>Blog Post</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    />
     <!-- gg font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
@@ -29,13 +33,16 @@
     <link rel="stylesheet" href="assets/css/Blog/blog.css" />
     <!-- link responsive for blog -->
     <link rel="stylesheet" href="assets/css/Blog/blogresponsive.css" />
+    <!-- link style for blogchild -->
+    <link rel="stylesheet" href="assets/css/BlogChild/blogchild.css" />
+    <!-- link responsive for blogchild -->
+    <link
+      rel="stylesheet"
+      href="assets/css/BlogChild/blogchildresponsive.css"
+    />
   </head>
   <body>
-    <!-- 
-      add thêm gallery cho 1 blog riêng
-      add thêm 1 video nếu có thể
-     -->
-    <section class="blog__page">
+    <section class="blogpost__page">
       <!-- header -->
       <header class="header">
         <div class="row">
@@ -210,13 +217,17 @@
       <!-- header img -->
       <div class="header__img-blog" id="top1">
         <div class="header__img-bars">
-          <p class="header__blog-title">BLOG</p>
+          <p class="header__blog-title">BLOG POST</p>
           <p class="header__blog-sub">
             <a href="index.html" class="blog-back">
               <i class="fa fa-home"></i>
             </a>
             <i class="fa fa-chevron-right"></i>
-            <span>BLOG</span>
+            <a href="blog.html" class="blog-back">
+              <span style="color: white">BLOG</span>
+            </a>
+            <i class="fa fa-chevron-right"></i>
+            <span>FRIENDLY SCHOOLS OPEN WITH MODERN TEACHING METHODS</span>
           </p>
         </div>
       </div>
@@ -240,7 +251,7 @@
                 <h4 class="blog__aside-heading">RECENT POSTS</h4>
                 <div class="recent-post__list">
                   <div class="recent-post__item">
-                    <a href="blogchild.html" class="recent-post__title"
+                    <a href="#" class="recent-post__title"
                       >NEW SCIENCE REASEARCH FACILITY IN NEWYORK AMERICAN</a
                     >
                     <div class="recent-post__feature">
@@ -259,7 +270,7 @@
                     </div>
                   </div>
                   <div class="recent-post__item">
-                    <a href="blogchild.html" class="recent-post__title"
+                    <a href="#" class="recent-post__title"
                       >NEW YORK SCHOOLS WONDER: HOW WHITE IS TO WHITE ?</a
                     >
                     <div class="recent-post__feature">
@@ -278,7 +289,7 @@
                     </div>
                   </div>
                   <div class="recent-post__item">
-                    <a href="blogchild.html" class="recent-post__title"
+                    <a href="#" class="recent-post__title"
                       >TEACHING BRONX STUDENTS THE LANGUAGE OF COMPUTERS</a
                     >
                     <div class="recent-post__feature">
@@ -303,341 +314,321 @@
                 <h4 class="blog__aside-heading">SEARCH IN SITE</h4>
                 <ul class="blog-categories__list">
                   <li class="blog-categories__item">
-                    <a href="blogchild.html" class="blog-categories__link">
-                      EXAM STREETS
-                    </a>
+                    <a href="#" class="blog-categories__link"> EXAM STREETS </a>
                     <span>2</span>
                   </li>
                   <li class="blog-categories__item">
-                    <a href="blogchild.html" class="blog-categories__link"
+                    <a href="#" class="blog-categories__link"
                       >LANGUAGE SCIENCE</a
                     >
                     <span>4</span>
                   </li>
                   <li class="blog-categories__item">
-                    <a href="blogchild.html" class="blog-categories__link"
+                    <a href="#" class="blog-categories__link"
                       >SCHOOL PSYCHOLOGY</a
                     >
                     <span>6</span>
                   </li>
                   <li class="blog-categories__item">
-                    <a href="blogchild.html" class="blog-categories__link"
+                    <a href="#" class="blog-categories__link"
                       >STUDENT GUIDANCE</a
                     >
                     <span>4</span>
                   </li>
                   <li class="blog-categories__item">
-                    <a href="blogchild.html" class="blog-categories__link"
-                      >UNCATEGORIZED</a
-                    >
+                    <a href="#" class="blog-categories__link">UNCATEGORIZED</a>
                     <span>2</span>
                   </li>
                   <li class="blog-categories__item">
-                    <a href="blogchild.html" class="blog-categories__link"
+                    <a href="#" class="blog-categories__link"
                       >VOCATIONAL COUNSELING</a
                     >
                     <span>5</span>
                   </li>
                   <li class="blog-categories__item">
-                    <a href="blogchild.html" class="blog-categories__link">
+                    <a href="#" class="blog-categories__link">
                       YOUTH SCIENCE
                     </a>
                     <span>4</span>
                   </li>
                 </ul>
               </div>
-              <!-- banner -->
-              <div class="blog-banner">
-                <a href="index.html">
-                  <img
-                    src="assets/image/blog-img/neonbrand-1-aA2Fadydc-unsplash.jpg"
-                    alt="blogbannerimg"
-                  />
-                </a>
-                <div class="banner-logo">
-                  <img src="assets/image/Academica_logo.png" alt="logo" />
+            </div>
+            <div class="blog-main-content">
+              <div class="blogchild__details">
+                <div class="blogchild__thumbnail">
+                  <img src="" alt="blogchildimg" />
+                  <i class="fas fa-expand-alt btn-expand-img"></i>
+                  <i class="fa fa-chevron-circle-left btn-previmg"></i>
+                  <i class="fa fa-chevron-circle-right btn-nextimg"></i>
+                </div>
+                <div class="blogchild__content">
+                  <a href="blogchild.html" class="blogchild__heading">
+                    THE THINGS YOU NEED TO KNOW BEFORE MAKING A SHORT FILM
+                  </a>
+                  <div class="blogchild__feature">
+                    <div class="blogchild__feature-list">
+                      <div class="blogchild__feature-item">
+                        <i class="fa fa-user"></i>
+                        <a class="blogchild__featuer-link" href="#"
+                          >Jane Jone</a
+                        >
+                      </div>
+                      <div class="blogchild__feature-item">
+                        <i class="fa fa-comment-alt"></i>
+                        <span>2</span>
+                      </div>
+                      <div class="blogchild__feature-item">
+                        <i class="fa fa-eye"></i>
+                        <span>2014</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="blogchild__content-details">
+                    <p>
+                      Making a short film with the availability of today’s
+                      technology has become a relatively simple endeavor for
+                      most people. Assuming that you own a respectable computer,
+                      a digital camcorder and some kind of editing software, you
+                      are basically ready to go. Add some decent actors, a
+                      simple script and you’re a filmmaker!
+                    </p>
+                    <p>
+                      But, first things first, you will need a story. Remember,
+                      most of what filmmakers do is to become a storyteller. And
+                      if this is your first attempt at creating a short film,
+                      consider a comedy or spoof on a topic that isn’t too
+                      serious.
+                    </p>
+                    <div class="blogchild__para-hightline">
+                      <p>
+                        With the discriminating taste that has been acquired by
+                        most film viewing audiences, even on Youtube, it’s wise
+                        to leave the more sobering ideas to those that can spend
+                        millions of dollars telling their story.
+                      </p>
+                    </div>
+                    <p>
+                      Now that you have a basic outline for your story using the
+                      cast available to you, create a bit of a character for
+                      each role. What is the personality of each character? Do
+                      they have a specific way of speaking? There are many ways
+                      to create individual characters for each role which helps
+                      when writing the final draft of the script. But don’t get
+                      jammed here. You might have friends that are really good
+                      actors and you have no idea. Ask around, see who is up for
+                      the excitement involved in making even a short film. Then
+                      work around what you have when writing the final draft of
+                      your script. Don’t forget that although you might only
+                      have a few characters in your story, that there will be
+                      background actors required, set dressers and production
+                      assistants to help organize things during the day of
+                      filming.
+                    </p>
+                  </div>
+                  <div class="blogchild__content-tag">
+                    <div class="blogchild__tags">
+                      <i class="fas fa-tags"></i>
+                      <span>ANIMAL</span>
+                      <span>DESTINATION</span>
+                    </div>
+                    <div class="blogchild__social">
+                      <a href="#" class="blogchild__social-link">
+                        <i class="fab fa-facebook-f"></i>
+                      </a>
+                      <a href="#" class="blogchild__social-link"
+                        ><i class="fab fa-twitter"></i>
+                      </a>
+                      <a href="#" class="blogchild__social-link">
+                        <i class="fab fa-google-plus"></i>
+                      </a>
+                      <a href="#" class="blogchild__social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                      </a>
+                      <a href="#" class="blogchild__social-link">
+                        <i class="fab fa-tumblr"></i>
+                      </a>
+                      <a href="#" class="blogchild__social-link">
+                        <i class="fab fa-pinterest-p"></i>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="blog-main-content">
-              <div class="blog-content__list">
-                <div class="blog-content__item">
-                  <div class="blog-content__media">
-                    <img
-                      src="assets/image/largerImg/largerimg1.jpg"
-                      alt="blogimg1"
-                    />
-                    <i class="fas fa-expand-alt btn-expand-img"></i>
-                    <div class="blog-content-icon">
-                      <i class="fas fa-file-alt"></i
-                      ><span>NOVEMBER 3, 2020</span>
+          </div>
+        </div>
+        <!-- related post -->
+        <div class="test-fix">
+          <div class="row">
+            <div class="related-post">
+              <h4 class="blogchild__subheading">RELATED POST</h4>
+              <div class="container-related">
+                <div class="related-post__list owl-carousel owl-theme">
+                  <div class="related-post__item">
+                    <div class="related-post__thumbnail">
+                      <img
+                        src="assets/image/lastnew/lastnew1.jpg"
+                        alt="relateimg"
+                      />
                     </div>
-                  </div>
-                  <div class="blog-item__details">
-                    <a href="blogchild.html"
-                      >FRIENDLY SCHOOLS OPEN WITH MODERN TEACHING METHODS</a
-                    >
-                    <p class="blog-item__para">
-                      As with most professions today, there are rapid
-                      developments in teaching that are being driven by social
-                      and technological changes. Keeping up to date with these
-                      developments within education will
-                    </p>
-                    <div class="blog-item__feature">
-                      <div class="blog-item-feature__item">
+                    <a href="blogchild.html">
+                      <h4>NEW SCIENCE RESEARCH FACILITY IN NEW AMERICAN</h4>
+                    </a>
+                    <div class="related-post__feature">
+                      <div class="related-post__feature-item">
+                        <i class="fa fa-calendar-alt"></i>
+                        <span>3, NOV, 2020</span>
+                      </div>
+                      <div class="related-post__feature-item">
                         <i class="fa fa-user"></i>
-                        <a href="#">ASHRAF BADRY</a>
-                      </div>
-                      <div class="blog-item-feature__item">
-                        <i class="fa fa-comments"></i>
-                        <span>2</span>
-                      </div>
-                      <div class="blog-item-feature__item">
-                        <i class="fa fa-eye"></i>
-                        <span>3100</span>
+                        <span>Jane Jone</span>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="blog-content__item">
-                  <div class="blog-item__details">
-                    <a href="blogchild.html"
-                      >ALONG COMMUNICATE DIRECTLY WITH EXPERIENCE TEACHERS</a
-                    >
-                    <p class="blog-item__para">
-                      Parental involvement enhances student success. A first
-                      step toward involvement is communicating with your child’s
-                      teacher. Effective communication consists of meeting with
-                      the teacher, being a
-                    </p>
-                    <div class="blog-item__feature">
-                      <div class="blog-item-feature__item">
+                  <div class="related-post__item">
+                    <div class="related-post__thumbnail">
+                      <img
+                        src="assets/image/lastnew/lastnew2.jpg"
+                        alt="relateimg"
+                      />
+                    </div>
+                    <a href="blogchild.html">
+                      <h4>NEW SCIENCE RESEARCH FACILITY IN NEW AMERICAN</h4>
+                    </a>
+                    <div class="related-post__feature">
+                      <div class="related-post__feature-item">
+                        <i class="fa fa-calendar-alt"></i>
+                        <span>3, NOV, 2020</span>
+                      </div>
+                      <div class="related-post__feature-item">
                         <i class="fa fa-user"></i>
-                        <a href="#">ASHRAF BADRY</a>
-                      </div>
-                      <div class="blog-item-feature__item">
-                        <i class="fa fa-comments"></i>
-                        <span>4</span>
-                      </div>
-                      <div class="blog-item-feature__item">
-                        <i class="fa fa-eye"></i>
-                        <span>3134</span>
+                        <span>Jane Jone</span>
                       </div>
                     </div>
                   </div>
-                  <div class="blog-content__media blog-change-position">
-                    <img
-                      src="assets/image/largerImg/largerimg2.jpg"
-                      alt="blogimg2"
-                    />
-                    <i class="fas fa-expand-alt btn-expand-img"></i>
-                    <div class="blog-content-icon">
-                      <i class="fas fa-file-alt"></i>
-                      <span>NOVEMBER 3, 2020</span>
+                  <div class="related-post__item">
+                    <div class="related-post__thumbnail">
+                      <img
+                        src="assets/image/lastnew/blog-07.jpg"
+                        alt="relateimg"
+                      />
                     </div>
-                  </div>
-                </div>
-                <div class="blog-content__item">
-                  <div class="blog-content__media">
-                    <img
-                      src="assets/image/largerImg/largerimg3.jpg"
-                      alt="blogimg3"
-                    />
-                    <i class="fas fa-expand-alt btn-expand-img"></i>
-                    <div class="blog-content-icon">
-                      <i class="fas fa-file-alt"></i>
-                      <span>NOVEMBER 3, 2020</span>
-                    </div>
-                  </div>
-                  <div class="blog-item__details">
-                    <a href="blogchild.html"
-                      >NEW SCIENCE RESEARCH FACILITY IN NEWYORK AMERICAN</a
-                    >
-                    <p class="blog-item__para">
-                      The ASRC focuses on CUNY initiatives in five dynamic
-                      fields of applied science: Nanoscience, Photonics,
-                      Structural Biology, Neuroscience, and Environmental
-                      Sciences. Through its innovative
-                    </p>
-                    <div class="blog-item__feature">
-                      <div class="blog-item-feature__item">
+                    <a href="blogchild.html">
+                      <h4>NEW SCIENCE RESEARCH FACILITY IN NEW AMERICAN</h4>
+                    </a>
+                    <div class="related-post__feature">
+                      <div class="related-post__feature-item">
+                        <i class="fa fa-calendar-alt"></i>
+                        <span>3, NOV, 2020</span>
+                      </div>
+                      <div class="related-post__feature-item">
                         <i class="fa fa-user"></i>
-                        <a href="#">ASHRAF BADRY</a>
-                      </div>
-                      <div class="blog-item-feature__item">
-                        <i class="fa fa-comments"></i>
-                        <span>2</span>
-                      </div>
-                      <div class="blog-item-feature__item">
-                        <i class="fa fa-eye"></i>
-                        <span>3033</span>
+                        <span>Jane Jone</span>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="blog-content__item">
-                  <div class="blog-item__details">
-                    <a href="blogchild.html"
-                      >NEW YORK SCHOOLS WONDER: HOW WHITE IS TO WHITE ?</a
-                    >
-                    <p class="blog-item__para">
-                      In New York, Mayor Bill de Blasio and Carmen Fariña, the
-                      schools chancellor, have disappointed school diversity
-                      advocates by failing to make integration a priority. The
-                      set-asides plan, approved by Ms. Fariña
-                    </p>
-                    <div class="blog-item__feature">
-                      <div class="blog-item-feature__item">
+                  <div class="related-post__item">
+                    <div class="related-post__thumbnail">
+                      <img
+                        src="assets/image/lastnew/blog-06.jpg"
+                        alt="relateimg"
+                      />
+                    </div>
+                    <a href="blogchild.html">
+                      <h4>
+                        ALONG COMMUNICATE DIRECTLY WITH EXPERIENCE TEACHERS
+                      </h4>
+                    </a>
+                    <div class="related-post__feature">
+                      <div class="related-post__feature-item">
+                        <i class="fa fa-calendar-alt"></i>
+                        <span>15, NOV, 2020</span>
+                      </div>
+                      <div class="related-post__feature-item">
                         <i class="fa fa-user"></i>
-                        <a href="#">ASHRAF BADRY</a>
-                      </div>
-                      <div class="blog-item-feature__item">
-                        <i class="fa fa-comments"></i>
-                        <span>2</span>
-                      </div>
-                      <div class="blog-item-feature__item">
-                        <i class="fa fa-eye"></i>
-                        <span>2800</span>
+                        <span>Anna Jone</span>
                       </div>
                     </div>
                   </div>
-                  <div class="blog-content__media blog-change-position">
-                    <img
-                      src="assets/image/largerImg/largerimg4.jpg"
-                      alt="blogimg4"
-                    />
-                    <i class="fas fa-expand-alt btn-expand-img"></i>
-                    <div class="blog-content-icon">
-                      <i class="fas fa-microphone"></i>
-                      <span>NOVEMBER 3, 2020</span>
+                  <div class="related-post__item">
+                    <div class="related-post__thumbnail">
+                      <img
+                        src="assets/image/lastnew/blog-04.jpg"
+                        alt="relateimg"
+                      />
                     </div>
-                  </div>
-                </div>
-                <div class="blog-content__item">
-                  <div class="blog-content__media">
-                    <img
-                      src="assets/image/largerImg/largerimg5.jpg"
-                      alt="blogimg5"
-                    />
-                    <i class="fas fa-expand-alt btn-expand-img"></i>
-                    <div class="blog-content-icon">
-                      <i class="far fa-file-image"></i>
-                      <span>JULY 6, 2020</span>
-                    </div>
-                  </div>
-                  <div class="blog-item__details">
-                    <a href="blogchild.html"
-                      >CAN SMART WATCH TAKE THE MARKET OF MOBILE IN 5 YEARS</a
-                    >
-                    <p class="blog-item__para">
-                      The stumbling block is that it will take several years
-                      before there are enough sensors in homes, businesses and
-                      vehicles to make it worth the trouble to strap on a
-                      smartwatch. “For watches to become more popular and more
-                      mainstream.
-                    </p>
-                    <div class="blog-item__feature">
-                      <div class="blog-item-feature__item">
+                    <a href="blogchild.html">
+                      <h4>NEW YORK SCHOOLS WONDER: HOW WHITE IS TO WHITE ?</h4>
+                    </a>
+                    <div class="related-post__feature">
+                      <div class="related-post__feature-item">
+                        <i class="fa fa-calendar-alt"></i>
+                        <span>18, NOV, 2020</span>
+                      </div>
+                      <div class="related-post__feature-item">
                         <i class="fa fa-user"></i>
-                        <a href="#">ASHRAF BADRY</a>
-                      </div>
-                      <div class="blog-item-feature__item">
-                        <i class="fa fa-comments"></i>
-                        <span>6</span>
-                      </div>
-                      <div class="blog-item-feature__item">
-                        <i class="fa fa-eye"></i>
-                        <span>3333</span>
+                        <span>Diana Lorem</span>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="blog-content__item">
-                  <div class="blog-item__details">
-                    <a href="blogchild.html"
-                      >HOW TO START A DIGITAL COMMUNITY RADIO TO ENRICH ?</a
-                    >
-                    <p class="blog-item__para">
-                      Community radio stations typically cover a small
-                      geographical area with a coverage radius of up to 5km and
-                      run on a not-for-profit basis. They can cater for whole
-                      communities or for different areas of
-                    </p>
-                    <div class="blog-item__feature">
-                      <div class="blog-item-feature__item">
+                  <div class="related-post__item">
+                    <div class="related-post__thumbnail">
+                      <img
+                        src="assets/image/lastnew/blog-08.jpg"
+                        alt="relateimg"
+                      />
+                    </div>
+                    <a href="blogchild.html">
+                      <h4>
+                        BRIDGING A DIGITAL DIVIDE THAT LEAVES SCHOOLCHILDREN
+                        BEHIND
+                      </h4>
+                    </a>
+                    <div class="related-post__feature">
+                      <div class="related-post__feature-item">
+                        <i class="fa fa-calendar-alt"></i>
+                        <span>18, NOV, 2020</span>
+                      </div>
+                      <div class="related-post__feature-item">
                         <i class="fa fa-user"></i>
-                        <a href="#">ASHRAF BADRY</a>
-                      </div>
-                      <div class="blog-item-feature__item">
-                        <i class="fa fa-comments"></i>
-                        <span>2</span>
-                      </div>
-                      <div class="blog-item-feature__item">
-                        <i class="fa fa-eye"></i>
-                        <span>2800</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="blog-content__media blog-change-position">
-                    <img
-                      src="assets/image/largerImg/largerimg6.jpg"
-                      alt="blogimg4"
-                    />
-                    <i class="fas fa-expand-alt btn-expand-img"></i>
-                    <div class="blog-content-icon">
-                      <i class="fas fa-microphone"></i>
-                      <span>NOVEMBER 3, 2020</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="blog-content__item">
-                  <div class="blog-content__media">
-                    <img
-                      src="assets/image/largerImg/largerimg7.jpg"
-                      alt="blogimg7"
-                    />
-                    <i class="fas fa-expand-alt btn-expand-img"></i>
-                    <div class="blog-content-icon">
-                      <i class="far fa-file-image"></i>
-                      <span>JULY 6, 2020</span>
-                    </div>
-                  </div>
-                  <div class="blog-item__details">
-                    <a href="blogchild.html"
-                      >BRIDGING A DIGITAL DIVIDE THAT LEAVES SCHOOLCHILDREN
-                      BEHIND</a
-                    >
-                    <p class="blog-item__para">
-                      With many educators pushing for students to use resources
-                      on the Internet with class work, the federal government is
-                      now grappling with a stark disparity in access to
-                      technology, between students who have
-                    </p>
-                    <div class="blog-item__feature">
-                      <div class="blog-item-feature__item">
-                        <i class="fa fa-user"></i>
-                        <a href="#">ASHRAF BADRY</a>
-                      </div>
-                      <div class="blog-item-feature__item">
-                        <i class="fa fa-comments"></i>
-                        <span>6</span>
-                      </div>
-                      <div class="blog-item-feature__item">
-                        <i class="fa fa-eye"></i>
-                        <span>3333</span>
+                        <span>Diana Lorem</span>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="blog__panigation">
-                <a href="#" class="panigation__link panigation__link--active"
-                  >1</a
-                >
-                <a href="#" class="panigation__link">2</a>
-                <a href="#" class="panigation__link">3</a>
-                <a href="#" class="panigation__link">Next</a>
+            </div>
+            <!-- banner -->
+            <div class="blog-banner">
+              <a href="index.html">
+                <img
+                  src="assets/image/blog-img/neonbrand-1-aA2Fadydc-unsplash.jpg"
+                  alt="blogbannerimg"
+                />
+              </a>
+              <div class="banner-logo">
+                <img src="assets/image/Academica_logo.png" alt="logo" />
               </div>
+            </div>
+          </div>
+        </div>
+        <!-- newsletter -->
+        <div class="our-sletter">
+          <div class="row">
+            <div class="our-sletter-details">
+              <div class="our-sletter-text">
+                <i class="far fa-envelope"></i>
+                <p>OUR <span>NEWSLETTER</span></p>
+              </div>
+              <form action="" class="our-sletter-form">
+                <div class="group-form">
+                  <input type="text" placeholder="ENTER YOUR E-MAIL ADDRESS" />
+                </div>
+                <button class="btn btn-our-sletter">
+                  <i class="fab fa-telegram-plane"></i>
+                </button>
+              </form>
             </div>
           </div>
         </div>
@@ -844,7 +835,10 @@
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="assets/js/home.js"></script>
+    <script src="assets/js/slider.js"></script>
     <script src="assets/js/blog.js"></script>
+    <script src="assets/js/blogchild.js"></script>
   </body>
 </html>

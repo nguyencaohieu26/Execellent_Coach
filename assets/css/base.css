@@ -8,6 +8,11 @@
   --third-color: #30a8cc;
   --footer-bg: #1a1a1a;
   --footer-textcolor: rgb(110, 110, 110);
+  --bg-facebook: #4867aa;
+  --bg-twitter: #3cf;
+  --bg-google: #db4437;
+  --bg-rss: #e78733;
+  --bg-linked: #0177b5;
   /* font */
   --font-family1: "Oswald", sans-serif;
 }
