@@ -1,0 +1,27 @@
+@media only screen and (max-width: 900px) {
+  .main__events .row {
+    grid-template-columns: 1fr;
+  }
+  .upcomming__item-details img {
+    max-height: 20rem;
+  }
+  .event-recent__post-thumbnail img {
+    max-height: 18rem;
+  }
+}
+@media only screen and (max-width: 730px) {
+  .main-event__item {
+    grid-template-columns: 1fr;
+  }
+  .main-event__item img {
+    height: 30rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .event-recent__post-item {
+    grid-template-columns: 1fr;
+  }
+  .event-recent__post-thumbnail img {
+    max-height: 15rem;
+  }
+}
