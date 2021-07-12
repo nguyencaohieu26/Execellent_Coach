@@ -5,8 +5,925 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Event Post</title>
+    <!-- gg font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- link base style -->
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <!-- link stylesheet -->
+    <link rel="stylesheet" href="assets/css/Home/home.css" />
+    <!-- link stylesheet responsive -->
+    <link rel="stylesheet" href="assets/css/Home/homeresponsive.css" />
+    <!-- link stylesheet for blog -->
+    <link rel="stylesheet" href="assets/css/Blog/blog.css" />
+    <!-- link responsive for blog -->
+    <link rel="stylesheet" href="assets/css/Blog/blogresponsive.css" />
+    <!-- link style sheet for events -->
+    <link rel="stylesheet" href="assets/css/Events/events.css" />
+    <!-- link responsive for events -->
+    <link rel="stylesheet" href="assets/css/Events/eventresponsive.css" />
+    <!--  -->
+    <link rel="stylesheet" href="assets/css/BlogChild/blogchild.css" />
+    <!-- link responsive for blogchild -->
+    <link
+      rel="stylesheet"
+      href="assets/css/BlogChild/blogchildresponsive.css"
+    />
+    <!-- link style for eventchild -->
+    <link rel="stylesheet" href="assets/css/EventChild/eventchild.css" />
   </head>
   <body>
-    <section class="event-post__page"></section>
+    <!-- 
+      fix oursletter
+      function append comment
+     -->
+    <section class="eventchild__page">
+      <!-- header -->
+      <header class="header">
+        <div class="row">
+          <!-- menu toggle -->
+          <div class="menu__toggle">
+            <i class="fa fa-bars"></i>
+          </div>
+          <!-- header logo -->
+          <div class="header__logo">
+            <a href="index.html" class="header__logo-link">
+              <img
+                src="assets/image/Academica_logo.png"
+                alt="Academica_Logo"
+                class="header__logo-img"
+              />
+            </a>
+          </div>
+          <!-- menu -->
+          <div class="header__menu">
+            <div class="header__menu-details">
+              <!-- nav -->
+              <nav class="header__nav">
+                <ul class="header__nav-list">
+                  <li class="header__nav-item">
+                    <a href="index.html" class="header__nav-link">HOME</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="blog.html" class="header__nav-link">BLOG</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="course.html" class="header__nav-link">
+                      <span>COURSE</span>
+                      <i class="fa fa-caret-down"></i>
+                    </a>
+                    <!-- sub menu -->
+                    <ul class="nav-child__list">
+                      <li class="nav-child__item">
+                        <a href="#" class="nav-child__link">
+                          <i class="fa fa-chevron-right"></i>
+                          <span>Math</span>
+                        </a>
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="#" class="nav-child__link">
+                          <i class="fa fa-chevron-right"></i>
+                          <span>Science</span>
+                        </a>
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="#" class="nav-child__link">
+                          <i class="fa fa-chevron-right"></i>
+                          <span>Life Skills</span>
+                        </a>
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="#" class="nav-child__link">
+                          <i class="fa fa-chevron-right"></i>
+                          <span>Technology</span>
+                        </a>
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="#" class="nav-child__link">
+                          <i class="fa fa-chevron-right"></i>
+                          <span>Law</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="event.html" class="header__nav-link">EVENTS</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="teacher.html" class="header__nav-link">TEACHERS</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="about.html" class="header__nav-link">ABOUT</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="contact.html" class="header__nav-link">CONTACT</a>
+                  </li>
+                </ul>
+              </nav>
+              <!-- menu icon -->
+              <div class="menu__icon">
+                <div class="cart__icon">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="search__icon">
+                  <i class="fas fa-search"></i>
+                </div>
+                <div class="lock__icon">
+                  <i class="fas fa-lock"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- mobile nav -->
+          <div class="header-mobile__nav">
+            <!-- search bar -->
+            <form action="" class="mobile__searchbar">
+              <input type="text" placeholder="Search..." />
+              <button class="btn btn-searchbar">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+            <!-- mobile nav -->
+            <nav class="mobile-nav">
+              <ul class="mobile__nav-list">
+                <li class="mobile__nav-item">
+                  <a href="index.html" class="mobile__nav-link">HOME</a>
+                </li>
+                <li class="mobile__nav-item">
+                  <a href="#" class="mobile__nav-link">BLOG</a>
+                </li>
+                <li class="mobile__nav-item">
+                  <button class="mobile__nav-link">
+                    <span>COURSE</span>
+                    <i class="fa fa-chevron-down"></i>
+                  </button>
+                  <!-- second menu -->
+                  <ul class="mobile__nav-child-list">
+                    <li class="mobile__nav-child-item">
+                      <a href="#" class="mobile__nav-child-link">Math</a>
+                    </li>
+                    <li class="mobile__nav-child-item">
+                      <a href="#" class="mobile__nav-child-link">Science</a>
+                    </li>
+                    <li class="mobile__nav-child-item">
+                      <a href="#" class="mobile__nav-child-link">Life Skills</a>
+                    </li>
+                    <li class="mobile__nav-child-item">
+                      <a href="#" class="mobile__nav-child-link">Technology</a>
+                    </li>
+                    <li class="mobile__nav-child-item">
+                      <a href="#" class="mobile__nav-child-link">Law</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="mobile__nav-item">
+                  <a href="#" class="mobile__nav-link">EVENTS</a>
+                </li>
+                <li class="mobile__nav-item">
+                  <a href="#" class="mobile__nav-link">TEACHERS</a>
+                </li>
+                <li class="mobile__nav-item">
+                  <a href="#" class="mobile__nav-link">ABOUT</a>
+                </li>
+                <li class="mobile__nav-item">
+                  <a href="#" class="mobile__nav-link">CONTACT</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!-- overlay -->
+      <div class="overlay"></div>
+      <!-- ------------------- -->
+      <!-- small info -->
+      <div class="small-info">
+        <div class="row">
+          <a href="mailto:infoacademica@gmail.com" class="small-info__email">
+            <i class="fab fa-telegram-plane"></i>
+            <span>Academica@gmail.com</span>
+          </a>
+          <p class="calendar-info">
+            <i class="far fa-clock"></i>
+            <span>MON - SAT: 9:00 - 18:00</span>
+          </p>
+        </div>
+      </div>
+      <!-- header img -->
+      <div class="header__img-blog" id="top6">
+        <div class="header__img-bars">
+          <p class="header__blog-title">EVENT POST</p>
+          <p class="header__blog-sub">
+            <a href="index.html" class="blog-back">
+              <i class="fa fa-home"></i>
+            </a>
+            <i class="fa fa-chevron-right"></i>
+            <a href="event.html">EVENT</a>
+            <i class="fa fa-chevron-right"></i>
+            <span>CREATE PROBLEM SOLVING FOR RESEARCHERS</span>
+          </p>
+        </div>
+      </div>
+      <!-- main -->
+      <main class="main__events">
+        <!-- main events details -->
+        <div class="row">
+          <div class="main__event-content">
+            <div class="eventchild__main">
+              <div class="eventchild__main-img">
+                <img
+                  src="assets/image/eventchild/eventchild__img.jpg"
+                  alt="eventchild__img"
+                />
+              </div>
+              <div class="eventchild__main-header">
+                <h3>CREATE PROBLEM SOLVING FOR RESEARCHERS</h3>
+                <div class="eventchild__feature-list">
+                  <p>
+                    <i class="fa fa-user"></i>
+                    <span>Mary Jane</span>
+                  </p>
+                  <p>
+                    <i class="fa fa-comment-alt"></i>
+                    <span>3</span>
+                  </p>
+                  <p>
+                    <i class="fa fa-eye"></i>
+                    <span>2019</span>
+                  </p>
+                </div>
+              </div>
+              <div class="eventchild__main-content">
+                <p>
+                  The core business of a PhD or early career researcher is to
+                  have new ideas and then explore them. Originality is our
+                  shared currency regardless of academic discipline. And yet
+                  many researchers report finding themselves stuck in a rut,
+                  having the same thoughts again and again, when what they
+                  really need are fresh insights, new concepts and original
+                  ideas. This empowering and challenging course will allow
+                  participants to bring along their own real problems and
+                  explore them from a number of new angles. The seminar will
+                  focus on the needs and personal creativity styles of all the
+                  participants and will then will move on to explore:
+                </p>
+                <ul>
+                  <li>
+                    How to explore a problem and tackle it from a number of new
+                    angles
+                  </li>
+                  <li>
+                    A range of creativity techniques and how to apply and
+                    implement them
+                  </li>
+                  <li>A toolkit for evaluating ideas</li>
+                </ul>
+              </div>
+              <div class="eventchild__main-article-tag">
+                <i class="fas fa-tags"></i>
+                <a href="#" class="eventchild__main-article-taglink"
+                  >E-LEARNING,</a
+                >
+                <a href="#" class="eventchild__main-article-taglink"
+                  >EDUCATION,</a
+                >
+                <a href="#" class="eventchild__main-article-taglink"
+                  >HOT EVENTS,</a
+                >
+                <a href="#" class="eventchild__main-article-taglink"
+                  >ONLINE COURSES</a
+                >
+              </div>
+              <div class="eventchild__main-doc">
+                <a href="#" class="btn btn-download-doc">
+                  <i class="fa fa-plus"></i>
+                  <span>GOOGLE CALENDAR</span>
+                </a>
+                <a href="#" class="btn btn-download-doc">
+                  <i class="fa fa-plus"></i>
+                  <span>MORE DETAILS</span>
+                </a>
+              </div>
+              <!-- leave a comment -->
+              <div class="eventchild__leave-comment">
+                <h4>LEAVE A COMMENT</h4>
+                <div class="eventchild__comment-list">
+                  <div class="eventchild__comment-item">
+                    <img
+                      src="/assets/image/reviewImg/team2.jpg"
+                      alt="imgperson1"
+                    />
+                    <div class="eventchild__comment-item-content">
+                      <p class="person-coment-name">Alex Wang</p>
+                      <span class="commment-date">3 June 2020</span>
+                      <p class="person-comment-desc">So Helpful!</p>
+                    </div>
+                    <div class="eventchild__list-star">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="eventchild__comment-item">
+                    <img
+                      src="/assets/image/reviewImg/team3.jpg"
+                      alt="imgperson2"
+                    />
+                    <div class="eventchild__comment-item-content">
+                      <p class="person-coment-name">Alex Wang</p>
+                      <span class="commment-date">3 February 2020</span>
+                      <p class="person-comment-desc">Good!</p>
+                    </div>
+                    <div class="eventchild__list-star">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                  <div class="eventchild__comment-item">
+                    <img
+                      src="/assets/image/reviewImg/team4.jpg"
+                      alt="imgperson3"
+                    />
+                    <div class="eventchild__comment-item-content">
+                      <p class="person-coment-name">Tommy Vuong</p>
+                      <span class="commment-date">12 Apirl 2020</span>
+                      <p class="person-comment-desc">Amazing Event!</p>
+                    </div>
+                    <div class="eventchild__list-star">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+                <form action="" class="eventchild__comment-form">
+                  <input type="text" placeholder="Enter your name" />
+                  <input type="text" placeholder="Enter your email" />
+                  <textarea placeholder="Your review..."></textarea>
+                  <button type="button" class="btn btn-eventchild-addcomment">
+                    Add Comment
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="aside__event-content">
+            <!-- adside-event__details -->
+            <div class="aside-event__details-info">
+              <div class="aside-event__details-list">
+                <div class="aside-event__details-item">
+                  <p>START</p>
+                  <p>FEBRUARY 18, 2020 @ 8:30 AM</p>
+                </div>
+                <div class="aside-event__details-item">
+                  <p>END</p>
+                  <p>DECEMBER 25, 2020 @ 10:30 AM</p>
+                </div>
+                <div class="aside-event__details-item">
+                  <p>ORGANIZERS</p>
+                  <p>DR. ANNA LAN</p>
+                </div>
+                <div class="aside-event__details-item">
+                  <p>ADDRESS</p>
+                  <p>3222 S 169th St, Seattle, WA United States</p>
+                </div>
+                <div class="aside-event__details-item">
+                  <p>COST</p>
+                  <p>FREE</p>
+                </div>
+                <div class="aside-event__details-item">
+                  <p>WEBSITE</p>
+                  <a href="#">www.Academica.edu</a>
+                </div>
+              </div>
+            </div>
+            <!-- aside share events -->
+            <div class="aside-event__share">
+              <h4 class="aside__event-heading">SHARE OUR EVENTS</h4>
+              <div class="aside-event__share-social">
+                <a href="#" class="aside-event__share-link">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="aside-event__share-link">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="aside-event__share-link">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="aside-event__share-link">
+                  <i class="fab fa-google-plus"></i>
+                </a>
+                <a href="#" class="aside-event__share-link">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="aside-event__share-link">
+                  <i class="fab fa-tumblr"></i>
+                </a>
+                <a href="#" class="aside-event__share-link">
+                  <i class="fab fa-pinterest-p"></i>
+                </a>
+              </div>
+            </div>
+            <!-- uppcomming-event-item -->
+            <div class="upcomming-event__item">
+              <h4 class="aside__event-heading">UPCOMMING EVENTS</h4>
+              <div class="upcomming__item">
+                <a href="#">
+                  <i class="fa fa-calendar-alt"></i>
+                  Science In The New Era
+                </a>
+                <div class="upcomming__item-details">
+                  <h4>Science In The New Era</h4>
+                  <div class="time-teacher">
+                    <p><i class="far fa-clock"></i><span>At 8:00 AM</span></p>
+                    <p><i class="fa fa-user"></i><span>Annie Lorem</span></p>
+                    <p>
+                      <i class="fa fa-calendar-alt"></i
+                      ><span>10 June 2020</span>
+                    </p>
+                  </div>
+                  <div class="upcomming__item-main">
+                    <img src="assets/image/upcomming/upcom7.jpg" alt="" />
+                    <div class="upcomming__item-desc">
+                      <p>
+                        On the other hand, we denounce with righteous
+                        indignation and dislike men who are so beguiled and
+                        demoralized by the charms of pleasure of the moment, so
+                        blinded by desire.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="upcomming__item">
+                <a href="#">
+                  <i class="fa fa-calendar-alt"></i>
+                  Vegie Garden Wednesday Workshops</a
+                >
+                <div class="upcomming__item-details">
+                  <h4>Vegie Garden Wednesday Workshops</h4>
+                  <div class="time-teacher">
+                    <p><i class="far fa-clock"></i><span>At 8:00 AM</span></p>
+                    <p><i class="fa fa-user"></i><span>Jacke Lorem</span></p>
+                    <p>
+                      <i class="fa fa-calendar-alt"></i
+                      ><span>14 June 2020</span>
+                    </p>
+                  </div>
+                  <div class="upcomming__item-main">
+                    <img src="assets/image/upcomming/upcom8.jpg" alt="upcom8" />
+                    <div class="upcomming__item-desc">
+                      <p>
+                        But in certain circumstances and owing to the claims of
+                        duty or the obligations of business it will frequently
+                        occur that pleasures..
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="upcomming__item">
+                <a href="#">
+                  <i class="fa fa-calendar-alt"></i>
+                  The Ecosystem Within Us</a
+                >
+                <div class="upcomming__item-details">
+                  <h4>The Ecosystem Within Us</h4>
+                  <div class="time-teacher">
+                    <p><i class="far fa-clock"></i><span>At 9:00 AM</span></p>
+                    <p><i class="fa fa-user"></i><span>Jacke Lorem</span></p>
+                    <p>
+                      <i class="fa fa-calendar-alt"></i
+                      ><span>14 June 2020</span>
+                    </p>
+                  </div>
+                  <div class="upcomming__item-main">
+                    <img src="assets/image/upcomming/upcom9.jpg" alt="upcom9" />
+                    <div class="upcomming__item-desc">
+                      <p>
+                        Nor again is there anyone who loves or pursues or
+                        desires to obtain pain of itself, because it is pain,
+                        but because occasionally circumstances occur in which
+                        toil and pain can procure.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="upcomming__item">
+                <a href="#">
+                  <i class="fa fa-calendar-alt"></i>
+                  How To Sell Anything</a
+                >
+                <div class="upcomming__item-details">
+                  <h4>How To Sell Anything</h4>
+                  <div class="time-teacher">
+                    <p><i class="far fa-clock"></i><span>At 7:00 AM</span></p>
+                    <p><i class="fa fa-user"></i><span>Jacke Lorem</span></p>
+                    <p>
+                      <i class="fa fa-calendar-alt"></i
+                      ><span>24 June 2020</span>
+                    </p>
+                  </div>
+                  <div class="upcomming__item-main">
+                    <img
+                      src="assets/image/upcomming/upcom10.jpg"
+                      alt="upcom9"
+                    />
+                    <div class="upcomming__item-desc">
+                      <p>
+                        Nor again is there anyone who loves or pursues or
+                        desires to obtain pain of itself, because it is pain,
+                        but because occasionally circumstances occur in which
+                        toil and pain can procure.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- banner -->
+            <div class="blog-banner">
+              <a href="index.html">
+                <img
+                  src="assets/image/blog-img/neonbrand-1-aA2Fadydc-unsplash.jpg"
+                  alt="blogbannerimg"
+                />
+              </a>
+              <div class="banner-logo">
+                <img src="assets/image/Academica_logo.png" alt="logo" />
+              </div>
+            </div>
+            <!-- recent-post -->
+            <div class="event-recent__post">
+              <h4 class="aside__event-heading">RECENT POSTS</h4>
+              <div class="event-recent__post-list">
+                <div class="event-recent__post-item">
+                  <div class="event-recent__post-thumbnail">
+                    <img
+                      src="assets/image/blogchild/blogchild-list1.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="event-recent__post-content">
+                    <a href="blogchild.html"
+                      >FRIENDLY SCHOOLS OPEN WITH MODERN TEACHING METHODS</a
+                    >
+                    <div class="event-recent__feature">
+                      <p><i class="fa fa-user"></i>Jane John</p>
+                      <p><i class="fa fa-comment-alt"></i>2</p>
+                      <p><i class="fa fa-eye"></i>2000</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="event-recent__post-item">
+                  <div class="event-recent__post-thumbnail">
+                    <img
+                      src="assets/image/blogchild/blogchild-list2.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="event-recent__post-content">
+                    <a href="blogchild.html"
+                      >ALONG COMMUNICATE DIRECTLY WITH EXPERIENCE TEACHERS</a
+                    >
+                    <div class="event-recent__feature">
+                      <p><i class="fa fa-user"></i>John Lenge</p>
+                      <p><i class="fa fa-comment-alt"></i>4</p>
+                      <p><i class="fa fa-eye"></i>2200</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="event-recent__post-item">
+                  <div class="event-recent__post-thumbnail">
+                    <img
+                      src="assets/image/blogchild/blogchild-list3.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="event-recent__post-content">
+                    <a href="blogchild.html"
+                      >NEW SCIENCE RESEARCH FACILITY IN NEWYORK AMERICAN</a
+                    >
+
+                    <div class="event-recent__feature">
+                      <p><i class="fa fa-user"></i>John Alia</p>
+                      <p><i class="fa fa-comment-alt"></i>5</p>
+                      <p><i class="fa fa-eye"></i>2340</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="event-recent__post-item">
+                  <div class="event-recent__post-thumbnail">
+                    <img
+                      src="assets/image/blogchild/blogchild-list4.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="event-recent__post-content">
+                    <a href="blogchild.html"
+                      >NEW YORK SCHOOLS WONDER: HOW WHITE IS TO WHITE ?</a
+                    >
+
+                    <div class="event-recent__feature">
+                      <p><i class="fa fa-user"></i>John Alia</p>
+                      <p><i class="fa fa-comment-alt"></i>5</p>
+                      <p><i class="fa fa-eye"></i>2340</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- newsletter -->
+      <div class="our-sletter">
+        <div class="row">
+          <div class="our-sletter-details">
+            <div class="our-sletter-text">
+              <i class="far fa-envelope"></i>
+              <p>OUR <span>NEWSLETTER</span></p>
+            </div>
+            <form action="" class="our-sletter-form">
+              <div class="group-form">
+                <input type="text" placeholder="ENTER YOUR E-MAIL ADDRESS" />
+              </div>
+              <button class="btn btn-our-sletter">
+                <i class="fab fa-telegram-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- movetotop -->
+      <div class="movetotop">
+        <a href="#top6">
+          <i class="fas fa-arrow-circle-up"></i>
+        </a>
+      </div>
+      <!-- img larger -->
+      <div class="footer-img__larger">
+        <div class="footer-img__larger-inner">
+          <img src="" alt="" class="img-footer-larger" />
+          <div class="close__imglarger">
+            <i class="fas fa-times-circle"></i>
+          </div>
+          <div class="larger-btns">
+            <i class="fa fa-chevron-left btn-prev-larger"></i>
+            <i class="fas fa-th-large btn-larger-gallery"></i>
+            <i class="fa fa-chevron-right btn-next-larger"></i>
+          </div>
+        </div>
+        <div class="larger-list__img">
+          <div class="larger-list__img-inner">
+            <div class="close__larger-img">
+              <i class="fa fa-times"></i>
+            </div>
+            <div class="color-header"></div>
+            <div class="gallery-larger-img">
+              <img
+                src="assets/image/largerImg/largerimg1.jpg"
+                alt="footerimg1"
+              />
+              <img
+                src="assets/image/largerImg/largerimg2.jpg"
+                alt="footerimg2"
+              />
+              <img
+                src="assets/image/largerImg/largerimg3.jpg"
+                alt="footerimg3"
+              />
+              <img
+                src="assets/image/largerImg/largerimg4.jpg"
+                alt="footerimg4"
+              />
+              <img
+                src="assets/image/largerImg/largerimg5.jpg"
+                alt="footerimg5"
+              />
+              <img
+                src="assets/image/largerImg/largerimg6.jpg"
+                alt="footerimg6"
+              />
+              <img
+                src="assets/image/largerImg/largerimg7.jpg"
+                alt="footerimg7"
+              />
+              <img
+                src="assets/image/largerImg/largerimg8.jpg"
+                alt="footerimg8"
+              />
+              <img
+                src="assets/image/largerImg/largerimg9.jpg"
+                alt="footerimg9"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- img larger -->
+      <div class="footer-img__larger">
+        <div class="footer-img__larger-inner">
+          <img src="" alt="" class="img-footer-larger" />
+          <div class="close__imglarger">
+            <i class="fas fa-times-circle"></i>
+          </div>
+          <div class="larger-btns">
+            <i class="fa fa-chevron-left btn-prev-larger"></i>
+            <i class="fas fa-th-large btn-larger-gallery"></i>
+            <i class="fa fa-chevron-right btn-next-larger"></i>
+          </div>
+        </div>
+        <div class="larger-list__img">
+          <div class="larger-list__img-inner">
+            <div class="close__larger-img">
+              <i class="fa fa-times"></i>
+            </div>
+            <div class="color-header"></div>
+            <div class="gallery-larger-img">
+              <img
+                src="assets/image/largerImg/largerimg1.jpg"
+                alt="footerimg1"
+              />
+              <img
+                src="assets/image/largerImg/largerimg2.jpg"
+                alt="footerimg2"
+              />
+              <img
+                src="assets/image/largerImg/largerimg3.jpg"
+                alt="footerimg3"
+              />
+              <img
+                src="assets/image/largerImg/largerimg4.jpg"
+                alt="footerimg4"
+              />
+              <img
+                src="assets/image/largerImg/largerimg5.jpg"
+                alt="footerimg5"
+              />
+              <img
+                src="assets/image/largerImg/largerimg6.jpg"
+                alt="footerimg6"
+              />
+              <img
+                src="assets/image/largerImg/largerimg7.jpg"
+                alt="footerimg7"
+              />
+              <img
+                src="assets/image/largerImg/largerimg8.jpg"
+                alt="footerimg8"
+              />
+              <img
+                src="assets/image/largerImg/largerimg9.jpg"
+                alt="footerimg9"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+      <footer class="footer">
+        <div class="row">
+          <div class="footer-details">
+            <div class="footer__logo">
+              <a href="index.html" class="footer__logo-link">
+                <img
+                  src="assets/image/footer-logo.png"
+                  alt="academica_logo"
+                  class="footer__logo-img"
+                />
+              </a>
+            </div>
+            <div class="footer__top">
+              <div class="footer__top-left">
+                <div class="footer__top-left-top">
+                  <h4 class="footer__heading">ABOUT US</h4>
+                  <p class="footer__desc">
+                    We are an experienced team creating great, unique and easy
+                    to set up templates for WordPress. We are a small, young and
+                    super driven team that likes to make great things happen.
+                  </p>
+                </div>
+                <div class="footer__top-left-bottom">
+                  <h4 class="footer__heading">GET IN TOUCH</h4>
+                  <ul class="footer-social__info">
+                    <li class="footer-social__item">
+                      <i class="fa fa-map-marked"></i>
+                      <span>
+                        G5 Technology JSC, Room 1101, Glory Palace Apartment,
+                        Truong Thi Ward, Vinh City, Nghe An Province,
+                        VietNam(42000)
+                      </span>
+                    </li>
+                    <li class="footer-social__item">
+                      <i class="fa fa-phone"></i>
+                      <span>(+84) 388-969-888 </span>
+                    </li>
+                    <li class="footer-social__item">
+                      <i class="fa fa-envelope"></i>
+                      <span>Academica@gmail.com</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer__top-right">
+                <div class="footer__top-right-top">
+                  <h4 class="footer__heading">NEWSLETTER</h4>
+                  <form action="" class="footer-form">
+                    <input type="text" placeholder="YOUR NAME" />
+                    <input type="email" placeholder="EMAIL ADDRESS" />
+                    <button type="button">THANK YOU</button>
+                  </form>
+                </div>
+                <div class="footer__top-right-bottom">
+                  <h4 class="footer__heading">OUR FLICKR</h4>
+                  <div class="footer__gallery">
+                    <img
+                      src="assets/image/largerImg/largerimg1.jpg"
+                      alt="footerimg1"
+                    />
+                    <img
+                      src="assets/image/largerImg/largerimg2.jpg"
+                      alt="footerimg2"
+                    />
+                    <img
+                      src="assets/image/largerImg/largerimg3.jpg"
+                      alt="footerimg3"
+                    />
+                    <img
+                      src="assets/image/largerImg/largerimg4.jpg"
+                      alt="footerimg4"
+                    />
+                    <img
+                      src="assets/image/largerImg/largerimg5.jpg"
+                      alt="footerimg5"
+                    />
+                    <img
+                      src="assets/image/largerImg/largerimg6.jpg"
+                      alt="footerimg6"
+                    />
+                    <img
+                      src="assets/image/largerImg/largerimg7.jpg"
+                      alt="footerimg7"
+                    />
+                    <img
+                      src="assets/image/largerImg/largerimg8.jpg"
+                      alt="footerimg8"
+                    />
+                    <img
+                      src="assets/image/largerImg/largerimg9.jpg"
+                      alt="footerimg9"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__bottom">
+              <nav class="footer__nav">
+                <ul class="footer__nav-list">
+                  <li class="footer__nav-item">
+                    <a href="index.html" class="footer__nav-link">HOME</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="course.html" class="footer__nav-link">COURSE</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="event.html" class="footer__nav-link">EVENTS</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="blog.html" class="footer__nav-link">BLOG</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="about.html" class="footer__nav-link">ABOUT</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/home.js"></script>
+    <script src="assets/js/blog.js"></script>
   </body>
 </html>

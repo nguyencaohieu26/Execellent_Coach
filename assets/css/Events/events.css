@@ -1,4 +1,10 @@
 /* main */
+.header__img-blog {
+  background: url(/assets/image/event__bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
 .main__events {
   padding: 8rem 1.5rem 5rem;
 }
