@@ -1,0 +1,36 @@
+/*  */
+@media only screen and (max-width: 1250px) {
+  /* main content course grid */
+  .course-page__center-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 850px) {
+  /* main grid */
+  .main__courses-page-details {
+    grid-template-columns: 1fr;
+  }
+  /* recent post */
+  .event-recent__post-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .event-recent__post-thumbnail img {
+    max-height: 32rem;
+  }
+}
+@media only screen and (max-width: 580px) {
+  /* main content course grid */
+  .course-page__center-list {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 500px) {
+  /* main content course grid */
+  .course-page__center-list {
+    grid-template-columns: 1fr;
+  }
+  /* recent post */
+  .event-recent__post-list {
+    grid-template-columns: 1fr;
+  }
+}
