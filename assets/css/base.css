@@ -45,6 +45,7 @@ li {
   padding: 0;
 }
 body {
+  overflow-x: hidden;
   font-size: 1.6rem;
   font-family: "Roboto", sans-serif;
 }

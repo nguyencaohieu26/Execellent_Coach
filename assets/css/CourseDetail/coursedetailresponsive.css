@@ -1,0 +1,54 @@
+@media only screen and (max-width: 992px) {
+  .main__detailcourse-detail {
+    grid-template-columns: 1fr;
+  }
+  .courses-page__aside {
+    margin-top: 3rem;
+  }
+}
+@media only screen and (max-width: 860px) {
+  .instructor__phonenumber {
+    display: block;
+  }
+  .about-instructor-persondetail p {
+    font-size: 1.1rem;
+  }
+  /* review */
+  .review-star__item {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .review-statistic__inner {
+    grid-template-columns: 1fr;
+  }
+  .review-statistic__left {
+    justify-self: center;
+    padding: 3rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .header__img-bars {
+    flex-wrap: wrap;
+  }
+  .header__blog-sub::after,
+  .header__blog-title::after {
+    display: none;
+  }
+  .header__img-bars > * {
+    width: 100%;
+  }
+  /* curriculum */
+  .ques-name {
+    grid-column: span 5;
+    order: 2;
+    margin-top: 1rem;
+  }
+  /* about instructor */
+  .about-instructor__list {
+    grid-template-columns: 1fr;
+  }
+  .about-instructor__item {
+    margin-top: 2rem;
+  }
+}

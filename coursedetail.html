@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COURSES</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"
+    />
+    <!-- gg font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- link base style -->
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <!-- link stylesheet -->
+    <link rel="stylesheet" href="assets/css/Home/home.css" />
+    <!-- link stylesheet responsive -->
+    <link rel="stylesheet" href="assets/css/Home/homeresponsive.css" />
+    <!-- link stylesheet for blog -->
+    <link rel="stylesheet" href="assets/css/Blog/blog.css" />
+    <!-- link responsive for blog -->
+    <link rel="stylesheet" href="assets/css/Blog/blogresponsive.css" />
+    <!-- link style sheet for events -->
+    <link rel="stylesheet" href="assets/css/Events/events.css" />
+    <!-- link responsive for events -->
+    <link rel="stylesheet" href="assets/css/Events/eventresponsive.css" />
+    <!-- link style for courses -->
+    <link rel="stylesheet" href="assets/css/Courses/courses.css" />
+    <!-- link responsive for courses -->
+    <link rel="stylesheet" href="assets/css/Courses/courseresponsive.css" />
+    <!-- link stylesheet for coursedetail -->
+    <link rel="stylesheet" href="assets/css/CourseDetail/coursedetail.css" />
+    <!-- link responsive for coursedetails -->
+    <link
+      rel="stylesheet"
+      href="assets/css/CourseDetail/coursedetailresponsive.css"
+    />
+  </head>
+  <body>
+    <!-- 
+      timetable
+     -->
+    <section class="courses__page">
+      <!-- header -->
+      <header class="header">
+        <div class="row">
+          <!-- menu toggle -->
+          <div class="menu__toggle">
+            <i class="fa fa-bars"></i>
+          </div>
+          <!-- header logo -->
+          <div class="header__logo">
+            <a href="index.html" class="header__logo-link">
+              <img
+                src="assets/image/Academica_logo.png"
+                alt="Academica_Logo"
+                class="header__logo-img"
+              />
+            </a>
+          </div>
+          <!-- menu -->
+          <div class="header__menu">
+            <div class="header__menu-details">
+              <!-- nav -->
+              <nav class="header__nav">
+                <ul class="header__nav-list">
+                  <li class="header__nav-item">
+                    <a href="index.html" class="header__nav-link">HOME</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="blog.html" class="header__nav-link">BLOG</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="course.html" class="header__nav-link">
+                      <span>COURSE</span>
+                      <i class="fa fa-caret-down"></i>
+                    </a>
+                    <!-- sub menu -->
+                    <ul class="nav-child__list">
+                      <li class="nav-child__item">
+                        <a href="course.html" class="nav-child__link">
+                          <i class="fa fa-chevron-right"></i>
+                          <span>Business</span>
+                        </a>
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="course.html" class="nav-child__link">
+                          <i class="fa fa-chevron-right"></i>
+                          <span>Marketing</span>
+                        </a>
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="course.html" class="nav-child__link">
+                          <i class="fa fa-chevron-right"></i>
+                          <span>Life Skills</span>
+                        </a>
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="course.html" class="nav-child__link">
+                          <i class="fa fa-chevron-right"></i>
+                          <span>Science</span>
+                        </a>
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="course.html" class="nav-child__link">
+                          <i class="fa fa-chevron-right"></i>
+                          <span>Law</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="event.html" class="header__nav-link">EVENTS</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="teacher.html" class="header__nav-link">TEACHERS</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="about.html" class="header__nav-link">ABOUT</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="contact.html" class="header__nav-link">CONTACT</a>
+                  </li>
+                </ul>
+              </nav>
+              <!-- menu icon -->
+              <div class="menu__icon">
+                <div class="cart__icon">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="search__icon">
+                  <i class="fas fa-search"></i>
+                </div>
+                <div class="lock__icon">
+                  <i class="fas fa-lock"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- mobile nav -->
+          <div class="header-mobile__nav">
+            <!-- search bar -->
+            <form action="" class="mobile__searchbar">
+              <input type="text" placeholder="Search..." />
+              <button class="btn btn-searchbar">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+            <!-- mobile nav -->
+            <nav class="mobile-nav">
+              <ul class="mobile__nav-list">
+                <li class="mobile__nav-item">
+                  <a href="index.html" class="mobile__nav-link">HOME</a>
+                </li>
+                <li class="mobile__nav-item">
+                  <a href="blog.html" class="mobile__nav-link">BLOG</a>
+                </li>
+                <li class="mobile__nav-item">
+                  <button class="mobile__nav-link">
+                    <span>COURSE</span>
+                    <i class="fa fa-chevron-down"></i>
+                  </button>
+                  <!-- second menu -->
+                  <ul class="mobile__nav-child-list">
+                    <li class="mobile__nav-child-item">
+                      <a href="course.html" class="mobile__nav-child-link"
+                        >Business</a
+                      >
+                    </li>
+                    <li class="mobile__nav-child-item">
+                      <a href="course.html" class="mobile__nav-child-link"
+                        >Marketing</a
+                      >
+                    </li>
+                    <li class="mobile__nav-child-item">
+                      <a href="course.html" class="mobile__nav-child-link"
+                        >Life Skills</a
+                      >
+                    </li>
+                    <li class="mobile__nav-child-item">
+                      <a href="course.html" class="mobile__nav-child-link"
+                        >Science</a
+                      >
+                    </li>
+                    <li class="mobile__nav-child-item">
+                      <a href="course.html" class="mobile__nav-child-link"
+                        >Law</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="mobile__nav-item">
+                  <a href="event.html" class="mobile__nav-link">EVENTS</a>
+                </li>
+                <li class="mobile__nav-item">
+                  <a href="teacherlist.html" class="mobile__nav-link"
+                    >TEACHERS</a
+                  >
+                </li>
+                <li class="mobile__nav-item">
+                  <a href="about.html" class="mobile__nav-link">ABOUT</a>
+                </li>
+                <li class="mobile__nav-item">
+                  <a href="contact.html" class="mobile__nav-link">CONTACT</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!-- overlay -->
+      <div class="overlay"></div>
+      <!-- ------------------- -->
+      <!-- small info -->
+      <div class="small-info">
+        <div class="row">
+          <a href="mailto:infoacademica@gmail.com" class="small-info__email">
+            <i class="fab fa-telegram-plane"></i>
+            <span>Academica@gmail.com</span>
+          </a>
+          <p class="calendar-info">
+            <i class="far fa-clock"></i>
+            <span>MON - SAT: 9:00 - 18:00</span>
+          </p>
+        </div>
+      </div>
+      <!-- header img -->
+      <div class="header__img-blog" id="top11">
+        <div class="header__img-bars">
+          <p class="header__blog-title">COURSES</p>
+          <p class="header__blog-sub">
+            <a href="index.html" class="blog-back">
+              <i class="fa fa-home"></i>
+            </a>
+            <i class="fa fa-chevron-right"></i>
+            <a href="course.html">COURSES</a>
+            <i class="fa fa-chevron-right"></i>
+            <span>RESPONSIVE WEB DESIGN</span>
+          </p>
+        </div>
+      </div>
+      <main class="main__detail-courses">
+        <div class="row">
+          <div class="main__detailcourse-detail">
+            <div class="detailcourse__center">
+              <h4 class="detailscourse__heading">RESPONSIVE WEB DESIGN</h4>
+              <!-- gallery img -->
+              <div class="detailcourse__gallery-img">
+                <div class="detailcourse__main-img">
+                  <img
+                    src="/assets/image/coursedetail/coursedetail1.jpg"
+                    alt="coursedetailimg1"
+                  />
+                  <div class="detailcourse__tag">
+                    <p>New</p>
+                  </div>
+                </div>
+                <div class="detailcourse__list-img">
+                  <img
+                    class="active"
+                    src="assets/image/coursedetail/coursedetail1.jpg"
+                    alt="coursedetailimg1"
+                  />
+                  <img
+                    src="assets/image/coursedetail/coursedetail2.jpg"
+                    alt="coursedetailimg2"
+                  />
+                  <img
+                    src="assets/image/coursedetail/coursedetail3.jpg"
+                    alt="coursedetailimg3"
+                  />
+                  <img
+                    src="assets/image/coursedetail/coursedetail4.jpg"
+                    alt="coursedetailimg4"
+                  />
+                </div>
+                <i class="far fa-arrow-alt-circle-left btn-prev-courseimg"></i>
+                <i class="far fa-arrow-alt-circle-right btn-next-courseimg"></i>
+              </div>
+              <!-- about instructor -->
+              <div class="about-instructor">
+                <h4 class="detailscourse__heading">ABOUT INSTRUCTOR</h4>
+                <div class="about-instructor__list">
+                  <div class="about-instructor__item">
+                    <img
+                      src="assets/image/coursedetail/teacher-course.jpg"
+                      alt="teacherimg"
+                    />
+                    <div class="about-instructor-persondetail">
+                      <p class="instructor__name">ASHRAF BADRY</p>
+                      <p class="instructor__position">Senior Web Designer</p>
+                      <a href="tel:+0906755634" class="instructor__phonenumber">
+                        <i class="fa fa-phone"></i>
+                        <span>0906755634</span>
+                      </a>
+                      <a
+                        href="mailto:ashraf@gmail.com"
+                        class="instructor__gmail"
+                      >
+                        <i class="fa fa-envelope"></i>
+                        <span>ashraf@gmail.com</span>
+                      </a>
+                      <div class="instructor__features">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="about-instructor__item">
+                    <img
+                      src="assets/image/coursedetail/teacher-course1.jpg"
+                      alt="teacherimg"
+                    />
+                    <div class="about-instructor-persondetail">
+                      <p class="instructor__name">FATMA HASSAN</p>
+                      <p class="instructor__position">Project Manager</p>
+                      <a href="tel:+0906755644" class="instructor__phonenumber">
+                        <i class="fa fa-phone"></i>
+                        <span>0906755644</span>
+                      </a>
+                      <a
+                        href="mailto:ashraf@gmail.com"
+                        class="instructor__gmail"
+                      >
+                        <i class="fa fa-envelope"></i>
+                        <span>hassanf@gmail.com</span>
+                      </a>
+                      <div class="instructor__features">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- course overview -->
+              <div class="course-overview">
+                <h4 class="detailscourse__heading">COURSE OVERVIEW</h4>
+                <p>
+                  In this course you’ll learn the fundamentals of responsive web
+                  design, create your own responsive web page that works well on
+                  any device – phone, tablet, desktop or anything in between.
+                  You’ll start by exploring what makes a site responsive and how
+                  some common responsive design patterns work across different
+                  devices. From there, you’ll learn how to create your own
+                  responsive layout using the viewport tag and CSS media
+                  queries. As you proceed, you’ll experiment with major and
+                  minor breakpoints, and optimizing text for reading.
+                </p>
+              </div>
+              <!-- course summary -->
+              <div class="course-summary">
+                <h4 class="detailscourse__heading">COURSE SUMMARY</h4>
+                <div class="course-summary__list">
+                  <p>
+                    <i class="fa fa-check"></i
+                    ><span
+                      >You should be comfortable reading and writing HTML and
+                      CSS</span
+                    >
+                  </p>
+                  <p>
+                    <i class="fa fa-check"></i
+                    ><span
+                      >You should also be able to inspect and modify websites
+                      using browser developer tools</span
+                    >
+                  </p>
+                  <p>
+                    <i class="fa fa-check"></i
+                    ><span
+                      >If you are unfamilar with HTML and CSS, or if feel like
+                      you need to brush up on them, start with our intro to HTML
+                      and CSS.</span
+                    >
+                  </p>
+                  <p>
+                    <i class="fa fa-check"></i
+                    ><span
+                      >You will not need to write Javascript for this
+                      course.</span
+                    >
+                  </p>
+                </div>
+              </div>
+              <!-- curriculum -->
+              <div class="course-curriculum">
+                <h4 class="detailscourse__heading">CURRICULUM</h4>
+                <div class="course-curriculum__list">
+                  <div class="course-curriculum__item">
+                    <h4 class="course-curriculum__heading">
+                      SECTION 1: INTRODUCTION TO HANDSTANDS
+                    </h4>
+                    <div class="course-curriculum__item-option active">
+                      <div class="course-curriculum__ques">
+                        <p class="ques-name">
+                          WELCOME TO THE COURSE!
+                          <i class="fa fa-caret-down"></i>
+                        </p>
+                        <p class="ques-type1">
+                          <i class="far fa-play-circle"></i>
+                          <span>PREVIEW</span>
+                        </p>
+                        <p class="ques-time">20M</p>
+                        <p class="ques-type2">VIDEO</p>
+                      </div>
+                      <div class="course-curriculum__ans">
+                        <p>
+                          Welcome to your firs’t video tutorial. This video will
+                          start with a simple introduction. Then, You will open
+                          up google cause I’ll show you where you can download
+                          the blender software and which version of it will we
+                          be using in the entire course period Note: The
+                          download link is available with the lecture, plus the
+                          .pdf file is also included for you to download if you
+                          still need help downloading the software.
+                        </p>
+                        <img
+                          src="assets/image/eventchild/eventchild__img.jpg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div class="course-curriculum__item-option">
+                      <div class="course-curriculum__ques">
+                        <p class="ques-name">
+                          USING THE EXERCISE FILES AND LOADING FONTS
+                          <i class="fa fa-caret-down"></i>
+                        </p>
+                        <p class="ques-type1">
+                          <i class="far fa-file-alt"></i>
+                          <span>PREVIEW</span>
+                        </p>
+                        <p class="ques-time">450 PAGES</p>
+                        <p class="ques-type2 ques-type2--blue">FREE</p>
+                      </div>
+                      <div class="course-curriculum__ans">
+                        <p>
+                          An InDesign template is a beautiful thing. If you find
+                          yourself creating the same kind of document over and
+                          over again, a template can save you a tremendous
+                          amount of time. Working with other designers? A
+                          template can help make sure you’re all on the same
+                          page. And if you need to get clients up and running on
+                          their own, a template can provide the guidance they
+                          need to execute a design successfully.
+                        </p>
+                        <a href="#" class="btn btn-downloadPDF">Download PDF</a>
+                      </div>
+                    </div>
+                    <div class="course-curriculum__item-option">
+                      <div class="course-curriculum__ques">
+                        <p class="ques-name">
+                          SAVING TIME WITH A GREAT TEMPLATE
+                          <i class="fa fa-caret-down"></i>
+                        </p>
+                        <p class="ques-type1">
+                          <i class="far fa-file-powerpoint"></i>
+                        </p>
+                        <p class="ques-time">2H 30M</p>
+                        <p class="ques-type2 ques-type2--purple">SEMINAR</p>
+                      </div>
+                      <div class="course-curriculum__ans">
+                        <p>
+                          Saving time with a great template provides you with
+                          in-depth training on Design. Taught by Anne-Marie
+                          Concepción as part of the Designing Templates with
+                          InDesign
+                        </p>
+                        <p>
+                          By building in the power tools you need for
+                          production—flexible master pages, logical layers,
+                          object styles, libraries and snippets, and
+                          styles—you’ll have a template that prepares you for
+                          success
+                        </p>
+                      </div>
+                    </div>
+                    <div class="course-curriculum__item-option">
+                      <div class="course-curriculum__ques">
+                        <p class="ques-name">
+                          CREATING A TEMPLATE FROM A PDF
+                          <i class="fa fa-caret-down"></i>
+                        </p>
+                        <p class="ques-type1">
+                          <i class="fas fa-pencil-alt"></i>
+                        </p>
+                        <p class="ques-time">1H 20M</p>
+                        <p class="ques-type2 ques-type2--blue">ACTIVITY</p>
+                      </div>
+                      <div class="course-curriculum__ans">
+                        <p>
+                          Templates are a way your small business can save time.
+                          When you have documents that you use frequently, such
+                          as presentations, minutes, forms and expense reports,
+                          you can create them with a template that is already
+                          pre-formatted to your specifications. A template also
+                          gives your documents a uniform look that can be
+                          modified to accommodate your specific needs. Sometimes
+                          you may have a PDF document that features a format you
+                          wish to use more than once. You can convert it to a
+                          Word template so you can use this design as often as
+                          necessary.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="course-curriculum__item-option">
+                      <div class="course-curriculum__ques">
+                        <p class="ques-name">
+                          SETTING UP LAYERS TO STREAMLINE PRODUCTION
+                          <i class="fa fa-caret-down"></i>
+                        </p>
+                        <p class="ques-type1">
+                          <i class="fas fa-graduation-cap"></i>
+                        </p>
+                        <p class="ques-time">1H 30M</p>
+                        <p class="ques-type2">QUIZ</p>
+                      </div>
+                      <div class="course-curriculum__ans">
+                        <p>
+                          Setting up layers to streamline production provides
+                          you with in-depth training on Design. Photoshop CC now
+                          includes Generator, a feature that could mean “no more
+                          slices”. Ever. Generator scans your layer names
+                          looking for file extensions. Once it finds one it
+                          understands, it takes all the pixels it can find on
+                          that layer (or, as you will see later, layer group)
+                          and saves them to a file of the specified kind
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="course-curriculum__item">
+                    <h4 class="course-curriculum__heading">
+                      SECTION 2: CREATING A SIMPLE MASTER PAGE STRATEGY
+                    </h4>
+                    <div class="course-curriculum__item-option">
+                      <div class="course-curriculum__ques">
+                        <p class="ques-name">
+                          ADDING AND ORGANIZING COLOR SWATCHES!
+                          <i class="fa fa-caret-down"></i>
+                        </p>
+                        <p class="ques-type1">
+                          <i class="far fa-file-video"></i>
+                          <span>PREVIEW</span>
+                        </p>
+                        <p class="ques-time">1H 20M</p>
+                        <p class="ques-type2">VIDEO</p>
+                      </div>
+                      <div class="course-curriculum__ans">
+                        <p>
+                          While your wrists will certain get stronger from
+                          practice and grow accustomed to the stress of the
+                          skill, a basic amount of wrist strengthening exercises
+                          for several weeks can only help things. I’d recommend
+                          working wrist curls and reverse wrist curls for around
+                          6-10 reps for 3 sets. I also strongly recommend trying
+                          some sledgehammer levering. Work in 2-3 sets of 3-5
+                          reps. In particular, exercises 1 and 3 are fantastic
+                          for building wrist strength and they are much harder
+                          than they look! Start with them to get the hang of
+                          sledgehammer work before you progress to the other two
+                          exercises. I don’t want somebody putting a hole
+                          through their floor or their face because they rushed
+                          things!
+                        </p>
+                      </div>
+                    </div>
+                    <div class="course-curriculum__item-option">
+                      <div class="course-curriculum__ques">
+                        <p class="ques-name">
+                          THE LOGO DESGIN BRIEFING WITH THE CLIENT
+                          <i class="fa fa-caret-down"></i>
+                        </p>
+                        <p class="ques-type1">
+                          <i class="fa fa-lock"></i>
+                          <span>PREVIEW</span>
+                        </p>
+                        <p class="ques-time">1H 20M</p>
+                        <p class="ques-type2">VIDEO</p>
+                      </div>
+                      <div class="course-curriculum__ans">
+                        <p>
+                          The content of this lesson is locked. To unlock it,
+                          you need to Buy this Course.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="course-curriculum__item-option">
+                      <div class="course-curriculum__ques">
+                        <p class="ques-name">
+                          MIDTERM TEST
+                          <i class="fa fa-caret-down"></i>
+                        </p>
+                        <p class="ques-type1">
+                          <i class="far fa-check-circle"></i>
+                        </p>
+                        <p class="ques-time">1H</p>
+                        <p class="ques-type2">VIDEO</p>
+                      </div>
+                      <div class="course-curriculum__ans">
+                        <p>
+                          This test will reveal how well you are acquiring the
+                          new material based on a short test of twenty questions
+                          and a brief written assignment.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- review statistic -->
+              <div class="course-review-statistic">
+                <h4 class="detailscourse__heading">REVIEWS STATISTIC</h4>
+                <div class="review-statistic__inner">
+                  <div class="review-statistic__left">
+                    <p class="point-ratting">4.5</p>
+                    <div class="review-statistic__star">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>120 Rattings</p>
+                  </div>
+                  <div class="review-statistic__right">
+                    <div class="review-star__item">
+                      <p>5 Start</p>
+                      <div class="review-progress">
+                        <div
+                          class="review-progress__bar review-progress__bar--60"
+                        ></div>
+                      </div>
+                      <p>10</p>
+                    </div>
+                    <div class="review-star__item">
+                      <p>4 Start</p>
+                      <div class="review-progress">
+                        <div
+                          class="review-progress__bar review-progress__bar--75"
+                        ></div>
+                      </div>
+                      <p>16</p>
+                    </div>
+                    <div class="review-star__item">
+                      <p>3 Start</p>
+                      <div class="review-progress">
+                        <div
+                          class="review-progress__bar review-progress__bar--85"
+                        ></div>
+                      </div>
+                      <p>22</p>
+                    </div>
+                    <div class="review-star__item">
+                      <p>2 Start</p>
+                      <div class="review-progress">
+                        <div
+                          class="review-progress__bar review-progress__bar--5"
+                        ></div>
+                      </div>
+                      <p>3</p>
+                    </div>
+                    <div class="review-star__item">
+                      <p>1 Start</p>
+                      <div class="review-progress">
+                        <div class="review-progress__bar"></div>
+                      </div>
+                      <p>0</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- review for this course -->
+              <div class="review-this__course">
+                <h4 class="detailscourse__heading">REVIEWS OF THIS COURSE</h4>
+                <div class="person__review-list">
+                  <div class="person__review-item">
+                    <img
+                      src="assets/image/reviewImg/team2.jpg"
+                      alt="personImg"
+                    />
+                    <div class="person__review-item-content">
+                      <p class="person__review-name">
+                        <span>COBUS BESTER</span>
+                        <span>June 7, 2021</span>
+                      </p>
+                      <p class="person__review-desc">
+                        This album proves why The Woo are the best band ever.
+                        Best music ever!
+                      </p>
+                      <div class="person__review-star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="person__review-item">
+                    <img
+                      src="assets/image/reviewImg/team3.jpg"
+                      alt="personImg"
+                    />
+                    <div class="person__review-item-content">
+                      <p class="person__review-name">
+                        <span>MARIA</span>
+                        <span>June 20, 2021</span>
+                      </p>
+                      <p class="person__review-desc">
+                        Can’t wait to start mixin’ with this one!
+                        Irba-irr-Up-up-up-up-date your theme!
+                      </p>
+                      <div class="person__review-star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="person__review-item">
+                    <img
+                      src="assets/image/reviewImg/team4.jpg"
+                      alt="personImg"
+                    />
+                    <div class="person__review-item-content">
+                      <p class="person__review-name">
+                        <span>Jone</span>
+                        <span>June 28, 2021</span>
+                      </p>
+                      <p class="person__review-desc">
+                        Can’t wait to start mixin’ with this one!
+                        Irba-irr-Up-up-up-up-date your theme!
+                      </p>
+                      <div class="person__review-star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- add review -->
+              <div class="add-review__course">
+                <h4 class="detailscourse__heading">ADD A REVIEW</h4>
+                <form action="" class="add-review__form">
+                  <input type="text" placeholder="Enter Your Name" />
+                  <input type="text" placeholder="Enter Your Email" />
+                  <textarea placeholder="Your Review"></textarea>
+                  <button class="btn btn-add-reviewcourse">ADD REVIEW</button>
+                </form>
+              </div>
+              <!--  -->
+            </div>
+            <div class="courses-page__aside">
+              <!-- course details -->
+              <div class="asidecourse__details">
+                <div class="asidecourse__details-list">
+                  <div class="asidecourse__details-item">
+                    <p class="left-text">START ON</p>
+                    <p class="right-text">MARCH 30, 2021</p>
+                  </div>
+                  <div class="asidecourse__details-item">
+                    <p class="left-text">DURATION</p>
+                    <p class="right-text">3M 3H</p>
+                  </div>
+                  <div class="asidecourse__details-item">
+                    <p class="left-text">LEVEL</p>
+                    <p class="right-text">BEGINNER</p>
+                  </div>
+                  <div class="asidecourse__details-item">
+                    <p class="left-text">INSTUTION</p>
+                    <p class="right-text">ADAFA ACADEMICA</p>
+                  </div>
+                  <div class="asidecourse__details-item">
+                    <p class="left-text">BRANCH</p>
+                    <p class="right-text">OXFORD STREET</p>
+                  </div>
+                  <div class="asidecourse__details-item">
+                    <p class="left-text">SEAT AVAIABLE</p>
+                    <p class="right-text">50</p>
+                  </div>
+                  <div class="asidecourse__details-item">
+                    <p class="left-text">PRICE</p>
+                    <p class="right-text right-text-price">$250</p>
+                  </div>
+                  <div class="asidecourse__details-item">
+                    <p class="left-text">TIMETABLE</p>
+                    <a href="#" class="btn-timetable-course right-text">
+                      <span>VIEW</span>
+                    </a>
+                  </div>
+                  <div class="asidecourse__details-item">
+                    <p class="left-text">DETAIL COURSE</p>
+                    <a href="#" class="btn-downdetail-course right-text"
+                      ><span>DOWNLOAD</span>
+                    </a>
+                  </div>
+                </div>
+                <a href="#" class="btn btn-enrollcourse"
+                  >ENROLL THIS COURSE NOW</a
+                >
+              </div>
+              <!-- location map -->
+              <div class="asidelocation-map">
+                <h4 class="aside__event-heading course-aside__heading">
+                  LOCATION MAP
+                </h4>
+                <div class="map-container">
+                  <div id="map"></div>
+                </div>
+              </div>
+              <!-- share our course -->
+              <div class="aside-share-ourcourse">
+                <h4 class="aside__event-heading course-aside__heading">
+                  SHARE OUR COURSE
+                </h4>
+                <div class="share-ourcourse__list">
+                  <a href="#" class="share-ourcourse__link">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="#" class="share-ourcourse__link">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="#" class="share-ourcourse__link">
+                    <i class="fab fa-google-plus-g"></i>
+                  </a>
+                  <a href="#" class="share-ourcourse__link">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                  <a href="#" class="share-ourcourse__link">
+                    <i class="fab fa-tumblr"></i>
+                  </a>
+                  <a href="#" class="share-ourcourse__link">
+                    <i class="fab fa-pinterest-p"></i>
+                  </a>
+                </div>
+              </div>
+              <!-- banner -->
+              <div class="blog-banner">
+                <a href="index.html">
+                  <img
+                    src="assets/image/blog-img/neonbrand-1-aA2Fadydc-unsplash.jpg"
+                    alt="blogbannerimg"
+                  />
+                </a>
+                <div class="banner-logo">
+                  <img src="assets/image/Academica_logo.png" alt="logo" />
+                </div>
+              </div>
+              <!-- recent-post -->
+              <div class="event-recent__post">
+                <h4 class="aside__event-heading course-aside__heading">
+                  RECENT POSTS
+                </h4>
+                <div class="event-recent__post-list">
+                  <div class="event-recent__post-item">
+                    <div class="event-recent__post-thumbnail">
+                      <img
+                        src="assets/image/blogchild/blogchild-list1.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="event-recent__post-content">
+                      <a href="blogchild.html"
+                        >FRIENDLY SCHOOLS OPEN WITH MODERN TEACHING METHODS</a
+                      >
+                      <div class="event-recent__feature">
+                        <p><i class="fa fa-user"></i>Jane John</p>
+                        <p><i class="fa fa-comment-alt"></i>2</p>
+                        <p><i class="fa fa-eye"></i>2000</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="event-recent__post-item">
+                    <div class="event-recent__post-thumbnail">
+                      <img
+                        src="assets/image/blogchild/blogchild-list2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="event-recent__post-content">
+                      <a href="blogchild.html"
+                        >ALONG COMMUNICATE DIRECTLY WITH EXPERIENCE TEACHERS</a
+                      >
+                      <div class="event-recent__feature">
+                        <p><i class="fa fa-user"></i>John Lenge</p>
+                        <p><i class="fa fa-comment-alt"></i>4</p>
+                        <p><i class="fa fa-eye"></i>2200</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="event-recent__post-item">
+                    <div class="event-recent__post-thumbnail">
+                      <img
+                        src="assets/image/blogchild/blogchild-list3.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="event-recent__post-content">
+                      <a href="blogchild.html"
+                        >NEW SCIENCE RESEARCH FACILITY IN NEWYORK AMERICAN</a
+                      >
+
+                      <div class="event-recent__feature">
+                        <p><i class="fa fa-user"></i>John Alia</p>
+                        <p><i class="fa fa-comment-alt"></i>5</p>
+                        <p><i class="fa fa-eye"></i>2340</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="event-recent__post-item">
+                    <div class="event-recent__post-thumbnail">
+                      <img
+                        src="assets/image/blogchild/blogchild-list4.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <div class="event-recent__post-content">
+                      <a href="blogchild.html"
+                        >NEW YORK SCHOOLS WONDER: HOW WHITE IS TO WHITE ?</a
+                      >
+
+                      <div class="event-recent__feature">
+                        <p><i class="fa fa-user"></i>John Alia</p>
+                        <p><i class="fa fa-comment-alt"></i>5</p>
+                        <p><i class="fa fa-eye"></i>2340</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- relate course -->
+              <div class="aside-related__course">
+                <h4 class="aside__event-heading course-aside__heading">
+                  RELATED COURSES
+                </h4>
+                <div class="related-course__list">
+                  <div class="related-course__item">
+                    <div class="related-course__thumbnail">
+                      <img src="assets/image/upcomming/upcom10.jpg" />
+                    </div>
+                    <div class="related-course__content">
+                      <a href="coursedetail.html">HOW TO SELL EVERYTHING</a>
+                      <div class="related-course__feature">
+                        <p>
+                          <i class="fa fa-calendar-alt"></i>
+                          <span>3M 3H</span>
+                        </p>
+                        <p>
+                          <i class="fa fa-user"></i>
+                          <span>Ashraf Badry</span>
+                        </p>
+                        <p>
+                          <i class="far fa-money-bill-alt"></i>
+                          <span>$100</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="related-course__item">
+                    <div class="related-course__thumbnail">
+                      <img src="assets/image/upcomming/upcom7.jpg" alt="" />
+                    </div>
+                    <div class="related-course__content">
+                      <a href="coursedetail.html">EFFECTIVE NEGOTIATION</a>
+                      <div class="related-course__feature">
+                        <p>
+                          <i class="fa fa-calendar-alt"></i>
+                          <span>3M 3H</span>
+                        </p>
+                        <p>
+                          <i class="fa fa-user"></i>
+                          <span>Ashraf Badry</span>
+                        </p>
+                        <p>
+                          <i class="far fa-money-bill-alt"></i>
+                          <span>$90</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="related-course__item">
+                    <div class="related-course__thumbnail">
+                      <img src="assets/image/upcomming/upcom6.jpg" alt="" />
+                    </div>
+                    <div class="related-course__content">
+                      <a href="coursedetail.html">ENGLISH AT WORK</a>
+                      <div class="related-course__feature">
+                        <p>
+                          <i class="fa fa-calendar-alt"></i>
+                          <span>3M 3H</span>
+                        </p>
+                        <p>
+                          <i class="fa fa-user"></i>
+                          <span>Ashraf Badry</span>
+                        </p>
+                        <p>
+                          <i class="far fa-money-bill-alt"></i>
+                          <span>$120</span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- movetotop -->
+      <div class="movetotop">
+        <a href="#top11">
+          <i class="fas fa-arrow-circle-up"></i>
+        </a>
+      </div>
+      <!-- img larger -->
+      <div class="footer-img__larger">
+        <div class="footer-img__larger-inner">
+          <img src="" alt="" class="img-footer-larger" />
+          <div class="close__imglarger">
+            <i class="fas fa-times-circle"></i>
+          </div>
+          <div class="larger-btns">
+            <i class="fa fa-chevron-left btn-prev-larger"></i>
+            <i class="fas fa-th-large btn-larger-gallery"></i>
+            <i class="fa fa-chevron-right btn-next-larger"></i>
+          </div>
+        </div>
+        <div class="larger-list__img">
+          <div class="larger-list__img-inner">
+            <div class="close__larger-img">
+              <i class="fa fa-times"></i>
+            </div>
+            <div class="color-header"></div>
+            <div class="gallery-larger-img">
+              <img
+                src="assets/image/largerImg/largerimg1.jpg"
+                alt="footerimg1"
+              />
+              <img
+                src="assets/image/largerImg/largerimg2.jpg"
+                alt="footerimg2"
+              />
+              <img
+                src="assets/image/largerImg/largerimg3.jpg"
+                alt="footerimg3"
+              />
+              <img
+                src="assets/image/largerImg/largerimg4.jpg"
+                alt="footerimg4"
+              />
+              <img
+                src="assets/image/largerImg/largerimg5.jpg"
+                alt="footerimg5"
+              />
+              <img
+                src="assets/image/largerImg/largerimg6.jpg"
+                alt="footerimg6"
+              />
+              <img
+                src="assets/image/largerImg/largerimg7.jpg"
+                alt="footerimg7"
+              />
+              <img
+                src="assets/image/largerImg/largerimg8.jpg"
+                alt="footerimg8"
+              />
+              <img
+                src="assets/image/largerImg/largerimg9.jpg"
+                alt="footerimg9"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+      <footer class="footer">
+        <div class="row">
+          <div class="footer-details">
+            <div class="footer__logo">
+              <a href="index.html" class="footer__logo-link">
+                <img
+                  src="assets/image/footer-logo.png"
+                  alt="academica_logo"
+                  class="footer__logo-img"
+                />
+              </a>
+            </div>
+            <div class="footer__top">
+              <div class="footer__top-left">
+                <div class="footer__top-left-top">
+                  <h4 class="footer__heading">ABOUT US</h4>
+                  <p class="footer__desc">
+                    We are an experienced team creating great, unique and easy
+                    to set up templates for WordPress. We are a small, young and
+                    super driven team that likes to make great things happen.
+                  </p>
+                </div>
+                <div class="footer__top-left-bottom">
+                  <h4 class="footer__heading">GET IN TOUCH</h4>
+                  <ul class="footer-social__info">
+                    <li class="footer-social__item">
+                      <i class="fa fa-map-marked"></i>
+                      <span>
+                        G5 Technology JSC, Room 1101, Glory Palace Apartment,
+                        Truong Thi Ward, Vinh City, Nghe An Province,
+                        VietNam(42000)
+                      </span>
+                    </li>
+                    <li class="footer-social__item">
+                      <i class="fa fa-phone"></i>
+                      <span>(+84) 388-969-888 </span>
+                    </li>
+                    <li class="footer-social__item">
+                      <i class="fa fa-envelope"></i>
+                      <span>Academica@gmail.com</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer__top-right">
+                <div class="footer__top-right-top">
+                  <h4 class="footer__heading">NEWSLETTER</h4>
+                  <form action="" class="footer-form">
+                    <input type="text" placeholder="YOUR NAME" />
+                    <input type="email" placeholder="EMAIL ADDRESS" />
+                    <button type="button">THANK YOU</button>
+                  </form>
+                </div>
+                <div class="footer__top-right-bottom">
+                  <h4 class="footer__heading">OUR FLICKR</h4>
+                  <div class="footer__gallery">
+                    <img
+                      src="assets/image/largerImg/largerimg1.jpg"
+                      alt="footerimg1"
+                    />
+                    <img
+                      src="assets/image/largerImg/largerimg2.jpg"
+                      alt="footerimg2"
+                    />
+                    <img
+                      src="assets/image/largerImg/largerimg3.jpg"
+                      alt="footerimg3"
+                    />
+                    <img
+                      src="assets/image/largerImg/largerimg4.jpg"
+                      alt="footerimg4"
+                    />
+                    <img
+                      src="assets/image/largerImg/largerimg5.jpg"
+                      alt="footerimg5"
+                    />
+                    <img
+                      src="assets/image/largerImg/largerimg6.jpg"
+                      alt="footerimg6"
+                    />
+                    <img
+                      src="assets/image/largerImg/largerimg7.jpg"
+                      alt="footerimg7"
+                    />
+                    <img
+                      src="assets/image/largerImg/largerimg8.jpg"
+                      alt="footerimg8"
+                    />
+                    <img
+                      src="assets/image/largerImg/largerimg9.jpg"
+                      alt="footerimg9"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__bottom">
+              <nav class="footer__nav">
+                <ul class="footer__nav-list">
+                  <li class="footer__nav-item">
+                    <a href="index.html" class="footer__nav-link">HOME</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="course.html" class="footer__nav-link">COURSE</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="event.html" class="footer__nav-link">EVENTS</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="blog.html" class="footer__nav-link">BLOG</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="about.html" class="footer__nav-link">ABOUT</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoDj_BA747-MBUfOHFsIOMyEZ5FhkqWb0&callback=initMap"
+    ></script>
+    <script>
+      function initMap() {
+        // map options
+        var options = {
+          zoom: 6,
+          center: { lat: 40.367474, lng: -82.996216 },
+        };
+
+        // new map
+        var map = new google.maps.Map(document.getElementById("map"), options);
+
+        // Columbus, OH, USA
+        addMarker({ lat: 39.983334, lng: -82.98333 });
+        //add marker function
+        function addMarker(coords) {
+          var marker = new google.maps.Marker({
+            position: coords,
+            map: map,
+          });
+        }
+      }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/coursedetail.js"></script>
+    <script src="assets/js/home.js"></script>
+  </body>
+</html>

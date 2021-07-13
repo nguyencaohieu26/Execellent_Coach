@@ -103,3 +103,33 @@ $(".play").on("click", function () {
 $(".stop").on("click", function () {
   owl.trigger("stop.owl.autoplay");
 });
+// 
+var owl = $(".our-instructors__list");
+ owl.owlCarousel({
+   items: 4,
+   loop: true,
+   nav: true,
+   dots: false,
+   margin: 20,
+   autoplay: true,
+   autoplayTimeout: 4000,
+   autoplayHoverPause: true,
+   animateOut: "fadeOut",
+   responsive: {
+    0: {
+      items: 1,
+    },
+    500: {
+      items: 2,
+    },
+    1000: {
+      items: 4,
+    },
+  },
+ });
+ $(".play").on("click", function () {
+   owl.trigger("play.owl.autoplay", [4000]);
+ });
+ $(".stop").on("click", function () {
+   owl.trigger("stop.owl.autoplay");
+ });

@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Teachers</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    />
+    <!-- gg font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- link base style -->
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <!-- link stylesheet -->
+    <link rel="stylesheet" href="assets/css/Home/home.css" />
+    <!-- link stylesheet responsive -->
+    <link rel="stylesheet" href="assets/css/Home/homeresponsive.css" />
+    <!-- link stylesheet for blog -->
+    <link rel="stylesheet" href="assets/css/Blog/blog.css" />
+    <!-- link responsive for blog -->
+    <link rel="stylesheet" href="assets/css/Blog/blogresponsive.css" />
+    <!-- link style for blogchild -->
+    <link rel="stylesheet" href="assets/css/BlogChild/blogchild.css" />
+    <!-- link responsive for blogchild -->
+    <link
+      rel="stylesheet"
+      href="assets/css/BlogChild/blogchildresponsive.css"
+    />
+    <!-- link stylesheet for teacher -->
+    <link rel="stylesheet" href="assets/css/teacher.css" />
+  </head>
+  <body>
+    <section class="teacher__page">
+      <!-- header -->
+      <header class="header">
+        <div class="row">
+          <!-- menu toggle -->
+          <div class="menu__toggle">
+            <i class="fa fa-bars"></i>
+          </div>
+          <!-- header logo -->
+          <div class="header__logo">
+            <a href="index.html" class="header__logo-link">
+              <img
+                src="assets/image/Academica_logo.png"
+                alt="Academica_Logo"
+                class="header__logo-img"
+              />
+            </a>
+          </div>
+          <!-- menu -->
+          <div class="header__menu">
+            <div class="header__menu-details">
+              <!-- nav -->
+              <nav class="header__nav">
+                <ul class="header__nav-list">
+                  <li class="header__nav-item">
+                    <a href="index.html" class="header__nav-link">HOME</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="blog.html" class="header__nav-link">BLOG</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="course.html" class="header__nav-link">
+                      <span>COURSE</span>
+                      <i class="fa fa-caret-down"></i>
+                    </a>
+                    <!-- sub menu -->
+                    <ul class="nav-child__list">
+                      <li class="nav-child__item">
+                        <a href="course.html" class="nav-child__link">
+                          <i class="fa fa-chevron-right"></i>
+                          <span>Math</span>
+                        </a>
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="course.html" class="nav-child__link">
+                          <i class="fa fa-chevron-right"></i>
+                          <span>Science</span>
+                        </a>
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="course.html" class="nav-child__link">
+                          <i class="fa fa-chevron-right"></i>
+                          <span>Life Skills</span>
+                        </a>
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="course.html" class="nav-child__link">
+                          <i class="fa fa-chevron-right"></i>
+                          <span>Technology</span>
+                        </a>
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="course.html" class="nav-child__link">
+                          <i class="fa fa-chevron-right"></i>
+                          <span>Law</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="event.html" class="header__nav-link">EVENTS</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="teacher.html" class="header__nav-link">TEACHERS</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="about.html" class="header__nav-link">ABOUT</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="contact.html" class="header__nav-link">CONTACT</a>
+                  </li>
+                </ul>
+              </nav>
+              <!-- menu icon -->
+              <div class="menu__icon">
+                <div class="cart__icon">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="search__icon">
+                  <i class="fas fa-search"></i>
+                </div>
+                <div class="lock__icon">
+                  <i class="fas fa-lock"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- mobile nav -->
+          <div class="header-mobile__nav">
+            <!-- search bar -->
+            <form action="" class="mobile__searchbar">
+              <input type="text" placeholder="Search..." />
+              <button class="btn btn-searchbar">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+            <!-- mobile nav -->
+            <nav class="mobile-nav">
+              <ul class="mobile__nav-list">
+                <li class="mobile__nav-item">
+                  <a href="index.html" class="mobile__nav-link">HOME</a>
+                </li>
+                <li class="mobile__nav-item">
+                  <a href="#" class="mobile__nav-link">BLOG</a>
+                </li>
+                <li class="mobile__nav-item">
+                  <button class="mobile__nav-link">
+                    <span>COURSE</span>
+                    <i class="fa fa-chevron-down"></i>
+                  </button>
+                  <!-- second menu -->
+                  <ul class="mobile__nav-child-list">
+                    <li class="mobile__nav-child-item">
+                      <a href="course.html" class="mobile__nav-child-link"
+                        >Math</a
+                      >
+                    </li>
+                    <li class="mobile__nav-child-item">
+                      <a href="course.html" class="mobile__nav-child-link"
+                        >Science</a
+                      >
+                    </li>
+                    <li class="mobile__nav-child-item">
+                      <a href="course.html" class="mobile__nav-child-link"
+                        >Life Skills</a
+                      >
+                    </li>
+                    <li class="mobile__nav-child-item">
+                      <a href="course.html" class="mobile__nav-child-link"
+                        >Technology</a
+                      >
+                    </li>
+                    <li class="mobile__nav-child-item">
+                      <a href="course.html" class="mobile__nav-child-link"
+                        >Law</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="mobile__nav-item">
+                  <a href="#" class="mobile__nav-link">EVENTS</a>
+                </li>
+                <li class="mobile__nav-item">
+                  <a href="#" class="mobile__nav-link">TEACHERS</a>
+                </li>
+                <li class="mobile__nav-item">
+                  <a href="#" class="mobile__nav-link">ABOUT</a>
+                </li>
+                <li class="mobile__nav-item">
+                  <a href="#" class="mobile__nav-link">CONTACT</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!-- overlay -->
+      <div class="overlay"></div>
+      <!-- ------------------- -->
+      <!-- small info -->
+      <div class="small-info">
+        <div class="row">
+          <a href="mailto:infoacademica@gmail.com" class="small-info__email">
+            <i class="fab fa-telegram-plane"></i>
+            <span>Academica@gmail.com</span>
+          </a>
+          <p class="calendar-info">
+            <i class="far fa-clock"></i>
+            <span>MON - SAT: 9:00 - 18:00</span>
+          </p>
+        </div>
+      </div>
+      <!-- header img -->
+      <div class="header__img-blog" id="top12">
+        <div class="header__img-bars">
+          <p class="header__blog-title">TEACHER</p>
+          <p class="header__blog-sub">
+            <a href="index.html" class="blog-back">
+              <i class="fa fa-home"></i>
+            </a>
+            <i class="fa fa-chevron-right"></i>
+            <span>TEACHER</span>
+          </p>
+        </div>
+      </div>
+      <!-- main -->
+      <main class="main__teacher">
+        <!-- teacher grid -->
+        <div class="teacher__list">
+          <div class="row">
+            <div class="teacher__detail-list">
+              <div class="teacher__detail-item">
+                <div class="teacher__detail-thumbnail">
+                  <img
+                    src="assets/image/ourteacher/teacher1.jpg"
+                    alt="teacherImg1"
+                  />
+                  <div class="teacher__details-social">
+                    <a href="#" class="teacher__social-link">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="teacher__social-link">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="teacher__social-link">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="teacher__detail-content">
+                  <a href="teacherdetail.html" class="teacher__name"
+                    >Danny Awesome</a
+                  >
+                  <p class="teacher__faculity">GUEST LECTURER - DESIGN</p>
+                  <p class="teacher__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequatur amet cumque possimus dicta accusamus doloribus!
+                  </p>
+                </div>
+              </div>
+              <div class="teacher__detail-item">
+                <div class="teacher__detail-thumbnail">
+                  <img
+                    src="assets/image/ourteacher/teacher2.jpg"
+                    alt="teacherImg2"
+                  />
+                  <div class="teacher__details-social">
+                    <a href="#" class="teacher__social-link">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="teacher__social-link">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="teacher__social-link">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="teacher__detail-content">
+                  <a href="teacherdetail.html" class="teacher__name"
+                    >Jennifer Homes</a
+                  >
+                  <p class="teacher__faculity">LECTURER - ECONOMICS</p>
+                  <p class="teacher__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequatur amet cumque possimus dicta accusamus doloribus!
+                  </p>
+                </div>
+              </div>
+              <div class="teacher__detail-item">
+                <div class="teacher__detail-thumbnail">
+                  <img
+                    src="assets/image/ourteacher/teacher3.jpg"
+                    alt="teacherImg3"
+                  />
+                  <div class="teacher__details-social">
+                    <a href="#" class="teacher__social-link">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="teacher__social-link">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="teacher__social-link">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="teacher__detail-content">
+                  <a href="teacherdetail.html" class="teacher__name"
+                    >Jacky Michaels</a
+                  >
+                  <p class="teacher__faculity">SENIOR LECTURE - MARKETING</p>
+                  <p class="teacher__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequatur amet cumque possimus dicta accusamus doloribus!
+                  </p>
+                </div>
+              </div>
+              <div class="teacher__detail-item">
+                <div class="teacher__detail-thumbnail">
+                  <img
+                    src="assets/image/ourteacher/teacher4.jpg"
+                    alt="teacherImg4"
+                  />
+                  <div class="teacher__details-social">
+                    <a href="#" class="teacher__social-link">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="teacher__social-link">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="teacher__social-link">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="teacher__detail-content">
+                  <a href="teacherdetail.html" class="teacher__name"
+                    >John Doe</a
+                  >
+                  <p class="teacher__faculity">PROFESSOR OF ECONOMICS</p>
+                  <p class="teacher__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequatur amet cumque possimus dicta accusamus doloribus!
+                  </p>
+                </div>
+              </div>
+              <div class="teacher__detail-item">
+                <div class="teacher__detail-thumbnail">
+                  <img
+                    src="assets/image/ourteacher/teacher5.jpg"
+                    alt="teacherImg4"
+                  />
+                  <div class="teacher__details-social">
+                    <a href="#" class="teacher__social-link">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="teacher__social-link">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="teacher__social-link">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="teacher__detail-content">
+                  <a href="teacherdetail.html" class="teacher__name"
+                    >Anthony Lee</a
+                  >
+                  <p class="teacher__faculity">JUNIOR LECTURE - WEB DESIGN</p>
+                  <p class="teacher__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequatur amet cumque possimus dicta accusamus doloribus!
+                  </p>
+                </div>
+              </div>
+              <div class="teacher__detail-item">
+                <div class="teacher__detail-thumbnail">
+                  <img
+                    src="assets/image/ourteacher/teacher6.jpg"
+                    alt="teacherImg6"
+                  />
+                  <div class="teacher__details-social">
+                    <a href="#" class="teacher__social-link">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="teacher__social-link">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="teacher__social-link">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="teacher__detail-content">
+                  <a href="teacherdetail.html" class="teacher__name"
+                    >Stephen Jenkings</a
+                  >
+                  <p class="teacher__faculity">SCIENCE PROFESSOR</p>
+                  <p class="teacher__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequatur amet cumque possimus dicta accusamus doloribus!
+                  </p>
+                </div>
+              </div>
+              <div class="teacher__detail-item">
+                <div class="teacher__detail-thumbnail">
+                  <img
+                    src="assets/image/ourteacher/teacher-7.jpg"
+                    alt="teacherImg6"
+                  />
+                  <div class="teacher__details-social">
+                    <a href="#" class="teacher__social-link">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="teacher__social-link">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="teacher__social-link">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="teacher__detail-content">
+                  <a href="teacherdetail.html" class="teacher__name"
+                    >Kathy Foster</a
+                  >
+                  <p class="teacher__faculity">TECHNOLOGY</p>
+                  <p class="teacher__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequatur amet cumque possimus dicta accusamus doloribus!
+                  </p>
+                </div>
+              </div>
+              <div class="teacher__detail-item">
+                <div class="teacher__detail-thumbnail">
+                  <img
+                    src="assets/image/ourteacher/teacher-8.jpg"
+                    alt="teacherImg8"
+                  />
+                  <div class="teacher__details-social">
+                    <a href="#" class="teacher__social-link">
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="teacher__social-link">
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="teacher__social-link">
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="teacher__detail-content">
+                  <a href="teacherdetail.html" class="teacher__name"
+                    >John Smith</a
+                  >
+                  <p class="teacher__faculity">TECHNOLOGY</p>
+                  <p class="teacher__desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequatur amet cumque possimus dicta accusamus doloribus!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- newsletter -->
+      <div class="our-sletter">
+        <div class="row">
+          <div class="our-sletter-details">
+            <div class="our-sletter-text">
+              <i class="far fa-envelope"></i>
+              <p>OUR <span>NEWSLETTER</span></p>
+            </div>
+            <form action="" class="our-sletter-form">
+              <div class="group-form">
+                <input type="text" placeholder="ENTER YOUR E-MAIL ADDRESS" />
+              </div>
+              <button class="btn btn-our-sletter">
+                <i class="fab fa-telegram-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- movetotop -->
+      <div class="movetotop">
+        <a href="#top12">
+          <i class="fas fa-arrow-circle-up"></i>
+        </a>
+      </div>
+      <!-- img larger -->
+      <div class="footer-img__larger">
+        <div class="footer-img__larger-inner">
+          <img src="" alt="" class="img-footer-larger" />
+          <div class="close__imglarger">
+            <i class="fas fa-times-circle"></i>
+          </div>
+          <div class="larger-btns">
+            <i class="fa fa-chevron-left btn-prev-larger"></i>
+            <i class="fas fa-th-large btn-larger-gallery"></i>
+            <i class="fa fa-chevron-right btn-next-larger"></i>
+          </div>
+        </div>
+        <div class="larger-list__img">
+          <div class="larger-list__img-inner">
+            <div class="close__larger-img">
+              <i class="fa fa-times"></i>
+            </div>
+            <div class="color-header"></div>
+            <div class="gallery-larger-img">
+              <img
+                src="assets/image/largerImg/largerimg1.jpg"
+                alt="footerimg1"
+              />
+              <img
+                src="assets/image/largerImg/largerimg2.jpg"
+                alt="footerimg2"
+              />
+              <img
+                src="assets/image/largerImg/largerimg3.jpg"
+                alt="footerimg3"
+              />
+              <img
+                src="assets/image/largerImg/largerimg4.jpg"
+                alt="footerimg4"
+              />
+              <img
+                src="assets/image/largerImg/largerimg5.jpg"
+                alt="footerimg5"
+              />
+              <img
+                src="assets/image/largerImg/largerimg6.jpg"
+                alt="footerimg6"
+              />
+              <img
+                src="assets/image/largerImg/largerimg7.jpg"
+                alt="footerimg7"
+              />
+              <img
+                src="assets/image/largerImg/largerimg8.jpg"
+                alt="footerimg8"
+              />
+              <img
+                src="assets/image/largerImg/largerimg9.jpg"
+                alt="footerimg9"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+      <footer class="footer">
+        <div class="row">
+          <div class="footer-details">
+            <div class="footer__logo">
+              <a href="index.html" class="footer__logo-link">
+                <img
+                  src="assets/image/footer-logo.png"
+                  alt="academica_logo"
+                  class="footer__logo-img"
+                />
+              </a>
+            </div>
+            <div class="footer__top">
+              <div class="footer__top-left">
+                <div class="footer__top-left-top">
+                  <h4 class="footer__heading">ABOUT US</h4>
+                  <p class="footer__desc">
+                    We are an experienced team creating great, unique and easy
+                    to set up templates for WordPress. We are a small, young and
+                    super driven team that likes to make great things happen.
+                  </p>
+                </div>
+                <div class="footer__top-left-bottom">
+                  <h4 class="footer__heading">GET IN TOUCH</h4>
+                  <ul class="footer-social__info">
+                    <li class="footer-social__item">
+                      <i class="fa fa-map-marked"></i>
+                      <span>
+                        G5 Technology JSC, Room 1101, Glory Palace Apartment,
+                        Truong Thi Ward, Vinh City, Nghe An Province,
+                        VietNam(42000)
+                      </span>
+                    </li>
+                    <li class="footer-social__item">
+                      <i class="fa fa-phone"></i>
+                      <span>(+84) 388-969-888 </span>
+                    </li>
+                    <li class="footer-social__item">
+                      <i class="fa fa-envelope"></i>
+                      <span>Academica@gmail.com</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer__top-right">
+                <div class="footer__top-right-top">
+                  <h4 class="footer__heading">NEWSLETTER</h4>
+                  <form action="" class="footer-form">
+                    <input type="text" placeholder="YOUR NAME" />
+                    <input type="email" placeholder="EMAIL ADDRESS" />
+                    <button type="button">THANK YOU</button>
+                  </form>
+                </div>
+                <div class="footer__top-right-bottom">
+                  <h4 class="footer__heading">OUR FLICKR</h4>
+                  <div class="footer__gallery">
+                    <img
+                      src="assets/image/largerImg/largerimg1.jpg"
+                      alt="footerimg1"
+                    />
+                    <img
+                      src="assets/image/largerImg/largerimg2.jpg"
+                      alt="footerimg2"
+                    />
+                    <img
+                      src="assets/image/largerImg/largerimg3.jpg"
+                      alt="footerimg3"
+                    />
+                    <img
+                      src="assets/image/largerImg/largerimg4.jpg"
+                      alt="footerimg4"
+                    />
+                    <img
+                      src="assets/image/largerImg/largerimg5.jpg"
+                      alt="footerimg5"
+                    />
+                    <img
+                      src="assets/image/largerImg/largerimg6.jpg"
+                      alt="footerimg6"
+                    />
+                    <img
+                      src="assets/image/largerImg/largerimg7.jpg"
+                      alt="footerimg7"
+                    />
+                    <img
+                      src="assets/image/largerImg/largerimg8.jpg"
+                      alt="footerimg8"
+                    />
+                    <img
+                      src="assets/image/largerImg/largerimg9.jpg"
+                      alt="footerimg9"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__bottom">
+              <nav class="footer__nav">
+                <ul class="footer__nav-list">
+                  <li class="footer__nav-item">
+                    <a href="index.html" class="footer__nav-link">HOME</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="course.html" class="footer__nav-link">COURSE</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="event.html" class="footer__nav-link">EVENTS</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="blog.html" class="footer__nav-link">BLOG</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="about.html" class="footer__nav-link">ABOUT</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/home.js"></script>
+  </body>
+</html>
