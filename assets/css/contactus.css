@@ -1,0 +1,104 @@
+/*  */
+.contactus__info {
+  padding: 8rem 1.5rem 6rem;
+}
+.contactus__info-list {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.contactus__info-item {
+  text-align: center;
+  cursor: pointer;
+}
+.contactus__info-icon {
+  position: relative;
+  height: 18rem;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 4px;
+}
+.contactus__info-icon i {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 40%);
+  transition: all 0.4s ease-out;
+}
+.contactus__info-item:nth-of-type(1) .contactus__info-icon {
+  background-color: var(--second-color);
+}
+.contactus__info-item:nth-of-type(2) .contactus__info-icon {
+  background-color: #ed8d37;
+}
+.contactus__info-item:nth-of-type(3) .contactus__info-icon {
+  background-color: #925dab;
+}
+.contactus__info-item:nth-of-type(4) .contactus__info-icon {
+  background-color: #5f2f73;
+}
+.contactus__info-item:hover .contactus__info-icon i {
+  transform: translate(-50%, -60%);
+}
+.contactus__info-content {
+  margin-top: 2rem;
+  font-family: var(--font-family1);
+}
+.contactus__info-content h4 {
+  font-size: 1.8rem;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+/* contactus__form */
+.contactus__form {
+  padding: 8rem 1.5rem 6rem;
+}
+.home__heading-contain {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.home__heading-contain::after {
+  left: 47%;
+  width: 6rem;
+}
+.contactus-form {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+.contactus-form input,
+.contactus-form textarea {
+  border: 1px solid rgb(233, 233, 233);
+  outline: none;
+  padding: 1rem;
+  border-radius: 3px;
+  font-family: var(--font-family1);
+}
+.contactus-form input {
+  grid-column: span 1;
+  height: 3.6rem;
+}
+.contactus-form textarea {
+  grid-column: span 2;
+  height: 10rem;
+  resize: none;
+}
+.contactus-form button {
+  justify-self: start;
+  background-color: var(--third-color);
+  color: white;
+  font-family: var(--font-family1);
+  padding: 1rem 2rem;
+  border-radius: 2px;
+}
+/* map */
+#map {
+  width: 100%;
+  height: 70vh;
+}
+@media only screen and (max-width: 500px) {
+  .contactus-form input {
+    grid-column: span 2;
+  }
+}
