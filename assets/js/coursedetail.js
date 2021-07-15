@@ -13,6 +13,7 @@ courseCurriculum__ques.forEach(function(button){
     })
   })
 })
+// ------------------------------
 // list coursedetail
 const courseListImg = document.querySelectorAll(".detailcourse__list-img img");
 const courseImgShow = document.querySelector(".detailcourse__main-img img");
@@ -44,4 +45,16 @@ courseListImg.forEach(function(button,index){
     courseImgShow.src = src;
     choseActive(index,courseListImg)
   })
+})
+// ------------------------------
+// function show timetable
+const viewTimetable        = document.querySelector(".btn-timetable-course");
+const timetable__container = document.querySelector(".timetable__container");
+const close__timetable     = document.querySelector(".close__timetable");
+viewTimetable.addEventListener("click",function(e){
+  e.preventDefault();
+  timetable__container.classList.add("active");
+})
+close__timetable.addEventListener("click",function(){
+  timetable__container.classList.remove("active");
 })

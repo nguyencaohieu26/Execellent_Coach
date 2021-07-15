@@ -1,6 +1,6 @@
 /* header img */
 .header__img-blog {
-  background: url(/assets/image/blog_bg.jpg);
+  background: url(../../image/blog_bg.jpg);
   height: 70vh;
   background-position: center center;
   background-size: cover;
