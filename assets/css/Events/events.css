@@ -1,6 +1,6 @@
 /* main */
 .header__img-blog {
-  background: url(/assets/image/event__bg.jpg);
+  background: url(../../image/event__bg.jpg);
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
