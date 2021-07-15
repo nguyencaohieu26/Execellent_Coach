@@ -1,6 +1,6 @@
 /* header img */
 .header__img-blog {
-  background: url(/assets/image/courses/bg-cousres.jpg);
+  background: url(../../image/courses/bg-cousres.jpg);
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;

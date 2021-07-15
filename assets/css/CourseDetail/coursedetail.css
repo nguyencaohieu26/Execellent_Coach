@@ -1,6 +1,6 @@
 /* course */
 .header__img-blog {
-  background: url(/assets/image/coursedetail/course-details__bg.jpg);
+  background: url(../../image/coursedetail/course-details__bg.jpg);
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;

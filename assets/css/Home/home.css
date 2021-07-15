@@ -541,7 +541,7 @@
 .callto-action {
   padding: 5rem 1.5rem;
   color: white;
-  background: url(/assets/image/bg-call-action-1.jpg);
+  background: url(../../image/bg-call-action-1.jpg);
   background-position: center center;
   background-size: cover;
 }
@@ -757,7 +757,7 @@
 }
 .testimonials {
   position: relative;
-  background: url(/assets/image/about_tab-bg.jpg);
+  background: url(../../image/about_tab-bg.jpg);
   background-position: center center;
   background-size: cover;
   height: 90vh;
