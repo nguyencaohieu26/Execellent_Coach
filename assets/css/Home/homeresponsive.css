@@ -30,6 +30,10 @@
     border-left: 0;
     border-bottom: 0;
   }
+  /* login form */
+  .login__form {
+    top: 100%;
+  }
 }
 @media only screen and (max-width: 992px) {
   /* nav */
@@ -39,7 +43,7 @@
   .header__logo-link {
     max-width: 18rem;
   }
-  .lock__icon,
+  .search__icon,
   .header__nav {
     display: none;
   }
@@ -61,6 +65,20 @@
     padding: 0;
     color: black;
     background-color: transparent;
+  }
+  /* login form */
+  .login-form__social-link i {
+    color: white;
+  }
+  .group-form1 i,
+  .login-form__social-link i {
+    font-size: 1.4rem;
+  }
+  .group-form1 i {
+    color: #777;
+  }
+  .login__form {
+    top: calc(100% + 3.6rem);
   }
   .header .row {
     grid-template-columns: 0.25fr 1fr 0.25fr;

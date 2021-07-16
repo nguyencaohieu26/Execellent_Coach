@@ -139,3 +139,24 @@
           positionScroll.classList.remove("active");
         }
     })
+//Login form 
+    const btn__OpenLogin = document.querySelector(".lock__icon");
+    const loginForm      = document.querySelector(".login__form");
+    btn__OpenLogin.addEventListener("click",function(){
+      loginForm.classList.toggle("active"); 
+    })
+    const btn__loginType = document.querySelectorAll(".btn-login-type");
+    const loginFormList  = document.querySelectorAll(".container-form form");
+    btn__loginType.forEach(function(button,index){
+      button.addEventListener("click",function(e){
+        var form = e.currentTarget.innerText;
+        loginFormList.forEach(function(item){
+          if(item.getAttribute("data-form") == form){
+            item.classList.add("active");
+            return;
+          }
+          item.classList.remove("active");
+        })
+        choseActive(index,btn__loginType)
+     })
+    }) 
