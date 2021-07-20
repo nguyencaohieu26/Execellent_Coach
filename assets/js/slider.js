@@ -133,3 +133,33 @@ var owl = $(".our-instructors__list");
  $(".stop").on("click", function () {
    owl.trigger("stop.owl.autoplay");
  });
+//  
+var owl = $(".cart__related-list");
+ owl.owlCarousel({
+   items: 3,
+   loop: true,
+   nav: false,
+   dots: false,
+   margin: 20,
+   autoplay: true,
+   autoplayTimeout: 4000,
+   autoplayHoverPause: true,
+   animateOut: "fadeOut",
+   responsive: {
+    0: {
+      items: 1,
+    },
+    500: {
+      items: 2,
+    },
+    800: {
+      items: 3,
+    },
+  },
+ });
+ $(".play").on("click", function () {
+   owl.trigger("play.owl.autoplay", [4000]);
+ });
+ $(".stop").on("click", function () {
+   owl.trigger("stop.owl.autoplay");
+ });

@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+    />
+    <!-- gg font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- link base style -->
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <!-- link stylesheet -->
+    <link rel="stylesheet" href="assets/css/Home/home.css" />
+    <!-- link stylesheet responsive -->
+    <link rel="stylesheet" href="assets/css/Home/homeresponsive.css" />
+    <!-- link stylesheet for blog -->
+    <link rel="stylesheet" href="assets/css/Blog/blog.css" />
+    <!-- link responsive for blog -->
+    <link rel="stylesheet" href="assets/css/Blog/blogresponsive.css" />
+    <!--  -->
+    <link rel="stylesheet" href="assets/css/Cart/cart.css" />
+  </head>
+  <body>
+    <section class="cart__page">
+      <!-- header -->
+      <header class="header">
+        <div class="row">
+          <!-- menu toggle -->
+          <div class="menu__toggle">
+            <i class="fa fa-bars"></i>
+          </div>
+          <!-- header logo -->
+          <div class="header__logo">
+            <a href="index.html" class="header__logo-link">
+              <img
+                src="assets/image/Academica_logo.png"
+                alt="Academica_Logo"
+                class="header__logo-img"
+              />
+            </a>
+          </div>
+          <!-- menu -->
+          <div class="header__menu">
+            <div class="header__menu-details">
+              <!-- nav -->
+              <nav class="header__nav">
+                <ul class="header__nav-list">
+                  <li class="header__nav-item">
+                    <a href="index.html" class="header__nav-link">HOME</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="blog.html" class="header__nav-link">BLOG</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="course.html" class="header__nav-link">
+                      <span>COURSE</span>
+                      <i class="fa fa-caret-down"></i>
+                    </a>
+                    <!-- sub menu -->
+                    <ul class="nav-child__list">
+                      <li class="nav-child__item">
+                        <a href="course.html" class="nav-child__link">
+                          <i class="fa fa-chevron-right"></i>
+                          <span>Business</span>
+                        </a>
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="course.html" class="nav-child__link">
+                          <i class="fa fa-chevron-right"></i>
+                          <span>Science</span>
+                        </a>
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="course.html" class="nav-child__link">
+                          <i class="fa fa-chevron-right"></i>
+                          <span>Life Skills</span>
+                        </a>
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="course.html" class="nav-child__link">
+                          <i class="fa fa-chevron-right"></i>
+                          <span>Technology</span>
+                        </a>
+                      </li>
+                      <li class="nav-child__item">
+                        <a href="course.html" class="nav-child__link">
+                          <i class="fa fa-chevron-right"></i>
+                          <span>Law</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="event.html" class="header__nav-link">EVENTS</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="teacher.html" class="header__nav-link">TEACHERS</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="about.html" class="header__nav-link">ABOUT</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="contact.html" class="header__nav-link">CONTACT</a>
+                  </li>
+                </ul>
+              </nav>
+              <!-- menu icon -->
+              <div class="menu__icon">
+                <div class="cart__icon">
+                  <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="search__icon">
+                  <i class="fas fa-search"></i>
+                </div>
+                <div class="lock__icon">
+                  <i class="fas fa-user"></i>
+                </div>
+                <div class="login__form">
+                  <div class="login__form-inner">
+                    <div class="login__form-detail">
+                      <h4>Sign into your account</h4>
+                      <div class="btns-chose-login-type">
+                        <button class="btn btn-login-type active">Login</button>
+                        <button class="btn btn-login-type">Register</button>
+                      </div>
+                      <div class="container-form">
+                        <form
+                          action=""
+                          class="login-form active"
+                          data-form="Login"
+                        >
+                          <div class="group-form1">
+                            <label for="username">UserName</label>
+                            <i class="far fa-user"></i
+                            ><input
+                              id="username"
+                              type="text"
+                              name="username"
+                              placeholder="Type your email address"
+                            />
+                          </div>
+                          <div class="group-form1">
+                            <label for="password">Password</label>
+                            <i class="fas fa-lock"></i
+                            ><input
+                              id="password"
+                              type="password"
+                              name="password"
+                              placeholder="Type your password"
+                            />
+                          </div>
+                          <a href="#" class="forgot__password"
+                            >Forgot password</a
+                          >
+                          <button type="button" class="btn btn-submit-login">
+                            Login
+                          </button>
+                          <p>Or Sign Up Using</p>
+                          <div class="login-form__social">
+                            <a href="#" class="login-form__social-link">
+                              <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="login-form__social-link">
+                              <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="login-form__social-link">
+                              <i class="fab fa-google"></i>
+                            </a>
+                          </div>
+                        </form>
+                        <form
+                          action=""
+                          class="register-form"
+                          data-form="Register"
+                        >
+                          <div class="group-form1">
+                            <input type="text" placeholder="FullName" />
+                          </div>
+                          <div class="group-form1">
+                            <input type="text" placeholder="Email Address" />
+                          </div>
+                          <div class="group-form1">
+                            <input type="password" placeholder="Password" />
+                          </div>
+                          <button class="btn btn-register-form">
+                            Register
+                          </button>
+                          <p>Follow Us On Social Media</p>
+                          <div class="login-form__social">
+                            <a href="#" class="login-form__social-link">
+                              <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="login-form__social-link">
+                              <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="login-form__social-link">
+                              <i class="fab fa-google"></i>
+                            </a>
+                            <a href="#" class="login-form__social-link">
+                              <i class="fab fa-linkedin-in"></i>
+                            </a>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- mobile nav -->
+          <div class="header-mobile__nav">
+            <!-- search bar -->
+            <form action="" class="mobile__searchbar">
+              <input type="text" placeholder="Search..." />
+              <button class="btn btn-searchbar">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+            <!-- mobile nav -->
+            <nav class="mobile-nav">
+              <ul class="mobile__nav-list">
+                <li class="mobile__nav-item">
+                  <a href="index.html" class="mobile__nav-link">HOME</a>
+                </li>
+                <li class="mobile__nav-item">
+                  <a href="blog.html" class="mobile__nav-link">BLOG</a>
+                </li>
+                <li class="mobile__nav-item">
+                  <button class="mobile__nav-link">
+                    <span>COURSE</span>
+                    <i class="fa fa-chevron-down"></i>
+                  </button>
+                  <!-- second menu -->
+                  <ul class="mobile__nav-child-list">
+                    <li class="mobile__nav-child-item">
+                      <a href="course.html" class="mobile__nav-child-link"
+                        >Business</a
+                      >
+                    </li>
+                    <li class="mobile__nav-child-item">
+                      <a href="course.html" class="mobile__nav-child-link"
+                        >Science</a
+                      >
+                    </li>
+                    <li class="mobile__nav-child-item">
+                      <a href="course.html" class="mobile__nav-child-link"
+                        >Life Skills</a
+                      >
+                    </li>
+                    <li class="mobile__nav-child-item">
+                      <a href="course.html" class="mobile__nav-child-link"
+                        >Technology</a
+                      >
+                    </li>
+                    <li class="mobile__nav-child-item">
+                      <a href="course.html" class="mobile__nav-child-link"
+                        >Law</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="mobile__nav-item">
+                  <a href="event.html" class="mobile__nav-link">EVENTS</a>
+                </li>
+                <li class="mobile__nav-item">
+                  <a href="teacher.html" class="mobile__nav-link">TEACHERS</a>
+                </li>
+                <li class="mobile__nav-item">
+                  <a href="about.html" class="mobile__nav-link">ABOUT</a>
+                </li>
+                <li class="mobile__nav-item">
+                  <a href="contact.html" class="mobile__nav-link">CONTACT</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!-- overlay -->
+      <div class="overlay"></div>
+      <!-- ------------------- -->
+      <!-- small info -->
+      <div class="small-info">
+        <div class="row">
+          <a href="mailto:infoacademica@gmail.com" class="small-info__email">
+            <i class="fab fa-telegram-plane"></i>
+            <span>Academica@gmail.com</span>
+          </a>
+          <p class="calendar-info">
+            <i class="far fa-clock"></i>
+            <span>MON - SAT: 9:00 - 18:00</span>
+          </p>
+        </div>
+      </div>
+      <!-- header img -->
+      <div class="header__img-blog" id="top1">
+        <div class="header__img-bars">
+          <p class="header__blog-title">CART</p>
+          <p class="header__blog-sub">
+            <a href="index.html" class="blog-back">
+              <i class="fa fa-home"></i>
+            </a>
+            <i class="fa fa-chevron-right"></i>
+            <span>CART</span>
+          </p>
+        </div>
+      </div>
+      <main class="main__cart">
+        <div class="cart__detail">
+          <div class="cart__detail-inner">
+            <!-- table -->
+            <div class="row">
+              <div class="cart__detail-table">
+                <table cellspacing="0">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>Product</th>
+                      <th></th>
+                      <th>Price</th>
+                      <th>Quanity</th>
+                      <th>Total</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="product-remove-item">
+                        <div class="remove-item">
+                          <i class="fa fa-times"></i>
+                        </div>
+                      </td>
+                      <td class="product-thumbnail">
+                        <a href="#">
+                          <img
+                            src="assets/image/courses/course_04-370x200.jpg"
+                            alt=""
+                          />
+                        </a>
+                      </td>
+                      <td class="product-name">
+                        <a href="#"> Responsive Web Design </a>
+                      </td>
+                      <td class="product-price">
+                        <span>$250</span>
+                      </td>
+                      <td class="product-quanity">
+                        <div class="quanity-cart">
+                          <div class="quanity-cart__inner">
+                            <button class="btn-desc-quanity">
+                              <i class="fa fa-minus"></i>
+                            </button>
+                            <input type="text" value="1" min="0" max="40" />
+                            <button class="btn-incres-quanity">
+                              <i class="fa fa-plus"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="product-total">$250</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- cart btns -->
+            <div class="cart__btns">
+              <div class="row">
+                <div class="cart__btns-inner">
+                  <!-- coupon -->
+                  <div class="cart__btn-coupon">
+                    <input type="text" placeholder="Coupon Code" />
+                    <button class="btn-apply-coupon cart__btn">
+                      APPLY COUPON
+                    </button>
+                  </div>
+                  <!-- update cart -->
+                  <div class="cart__btn-update">
+                    <button class="btn-update-cart cart__btn">
+                      UPDATE CART
+                    </button>
+                  </div>
+                  <!-- process -->
+                  <div class="cart__btn-process">
+                    <button class="btn-checkout cart__btn">
+                      PROCESS TO CHECKOUT
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- cart total -->
+            <div class="cart__total-table">
+              <div class="row">
+                <h4>CART TOTALS</h4>
+                <div class="cart__totaltable__inner">
+                  <table cellspacing="0">
+                    <thead>
+                      <tr>
+                        <th>Subtotal</th>
+                        <th>$250</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Total</td>
+                        <td>$250</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <!-- you may be interested in -->
+            <div class="cart__item-related">
+              <div class="row">
+                <div class="cart__item-related-heading">
+                  <div class="star-listcart">
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <h4>YOU MAY BE INTERESTED IN</h4>
+                </div>
+                <!-- cart related product -->
+                <div class="cart__related-list owl-carousel owl-theme">
+                  <div class="cart__related-item">
+                    <div class="cart__related-item-thumbnail">
+                      <img
+                        src="assets/image/courses/lawcourse.jpg"
+                        alt="lawcourseimg"
+                      />
+                      <div class="cart__related-item__tags">
+                        <span>NEW</span>
+                        <span>SOLD</span>
+                      </div>
+                    </div>
+                    <div class="cart__related-item-content">
+                      <div class="cart__related-content__header">
+                        <div class="cart__related-content__header-top">
+                          <h4>REAL ESTATE LAW</h4>
+                          <p>$280</p>
+                        </div>
+                        <div class="cart__related-content__feature">
+                          <p>
+                            <i class="fa fa-calendar-alt"></i>
+                            <span>3M 2H</span>
+                          </p>
+                          <p>
+                            <i class="fa fa-user"></i>
+                            <span>JOHN LEGEND</span>
+                          </p>
+                          <p>
+                            <i class="fa fa-graduation-cap"></i>
+                            <span>BEGINER</span>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="cart__related-content__para">
+                        Explore the legal issues involved in real estate law,
+                        from investing to title examinations. You'll not only
+                        master the essentials, but you' ll receive hands-on
+                        application on.
+                      </div>
+                      <button class="btn btn-applycourse">APPLY NOW</button>
+                    </div>
+                  </div>
+                  <div class="cart__related-item">
+                    <div class="cart__related-item-thumbnail">
+                      <img
+                        src="assets/image/courses/realcourse.jpg"
+                        alt="realcourseimg"
+                      />
+                      <div class="cart__related-item__tags">
+                        <span>NEW</span>
+                        <span>SOLD</span>
+                      </div>
+                    </div>
+                    <div class="cart__related-item-content">
+                      <div class="cart__related-content__header">
+                        <div class="cart__related-content__header-top">
+                          <h4>BUSINESS LAW</h4>
+                          <p>$280</p>
+                        </div>
+                        <div class="cart__related-content__feature">
+                          <p>
+                            <i class="fa fa-calendar-alt"></i>
+                            <span>3M 2H</span>
+                          </p>
+                          <p>
+                            <i class="fa fa-user"></i>
+                            <span>JOHN LEGEND</span>
+                          </p>
+                          <p>
+                            <i class="fa fa-graduation-cap"></i>
+                            <span>BEGINER</span>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="cart__related-content__para">
+                        Explore the legal issues involved in real estate law,
+                        from investing to title examinations. You'll not only
+                        master the essentials, but you' ll receive hands-on
+                        application on.
+                      </div>
+                      <button class="btn btn-applycourse">APPLY NOW</button>
+                    </div>
+                  </div>
+                  <div class="cart__related-item">
+                    <div class="cart__related-item-thumbnail">
+                      <img
+                        src="assets/image/courses/secret-econicourse.jpg"
+                        alt="realcourseimg"
+                      />
+                      <div class="cart__related-item__tags">
+                        <span>NEW</span>
+                        <span>SOLD</span>
+                      </div>
+                    </div>
+                    <div class="cart__related-item-content">
+                      <div class="cart__related-content__header">
+                        <div class="cart__related-content__header-top">
+                          <h4>ECONOMIC LAW</h4>
+                          <p>$220</p>
+                        </div>
+                        <div class="cart__related-content__feature">
+                          <p>
+                            <i class="fa fa-calendar-alt"></i>
+                            <span>3M 2H</span>
+                          </p>
+                          <p>
+                            <i class="fa fa-user"></i>
+                            <span>JOHN LEGEND</span>
+                          </p>
+                          <p>
+                            <i class="fa fa-graduation-cap"></i>
+                            <span>BEGINER</span>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="cart__related-content__para">
+                        Explore the legal issues involved in real estate law,
+                        from investing to title examinations. You'll not only
+                        master the essentials, but you' ll receive hands-on
+                        application on.
+                      </div>
+                      <button class="btn btn-applycourse">APPLY NOW</button>
+                    </div>
+                  </div>
+                  <div class="cart__related-item">
+                    <div class="cart__related-item-thumbnail">
+                      <img
+                        src="assets/image/courses/bg-cousres.jpg"
+                        alt="realcourseimg"
+                      />
+                      <div class="cart__related-item__tags">
+                        <span>NEW</span>
+                        <span>SOLD</span>
+                      </div>
+                    </div>
+                    <div class="cart__related-item-content">
+                      <div class="cart__related-content__header">
+                        <div class="cart__related-content__header-top">
+                          <h4>NEGOTIATION TALK</h4>
+                          <p>$200</p>
+                        </div>
+                        <div class="cart__related-content__feature">
+                          <p>
+                            <i class="fa fa-calendar-alt"></i>
+                            <span>3M 2H</span>
+                          </p>
+                          <p>
+                            <i class="fa fa-user"></i>
+                            <span>JOHN LEGEND</span>
+                          </p>
+                          <p>
+                            <i class="fa fa-graduation-cap"></i>
+                            <span>BEGINER</span>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="cart__related-content__para">
+                        Explore the legal issues involved in real estate law,
+                        from investing to title examinations. You'll not only
+                        master the essentials, but you' ll receive hands-on
+                        application on.
+                      </div>
+                      <button class="btn btn-applycourse">APPLY NOW</button>
+                    </div>
+                  </div>
+                  <div class="cart__related-item">
+                    <div class="cart__related-item-thumbnail">
+                      <img
+                        src="assets/image/courses/bg-cousres.jpg"
+                        alt="realcourseimg"
+                      />
+                      <div class="cart__related-item__tags">
+                        <span>NEW</span>
+                        <span>SOLD</span>
+                      </div>
+                    </div>
+                    <div class="cart__related-item-content">
+                      <div class="cart__related-content__header">
+                        <div class="cart__related-content__header-top">
+                          <h4>NEGOTIATION TALK</h4>
+                          <p>$200</p>
+                        </div>
+                        <div class="cart__related-content__feature">
+                          <p>
+                            <i class="fa fa-calendar-alt"></i>
+                            <span>3M 2H</span>
+                          </p>
+                          <p>
+                            <i class="fa fa-user"></i>
+                            <span>JOHN LEGEND</span>
+                          </p>
+                          <p>
+                            <i class="fa fa-graduation-cap"></i>
+                            <span>BEGINER</span>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="cart__related-content__para">
+                        Explore the legal issues involved in real estate law,
+                        from investing to title examinations. You'll not only
+                        master the essentials, but you' ll receive hands-on
+                        application on.
+                      </div>
+                      <button class="btn btn-applycourse">APPLY NOW</button>
+                    </div>
+                  </div>
+                  <div class="cart__related-item">
+                    <div class="cart__related-item-thumbnail">
+                      <img
+                        src="assets/image/courses/bg-cousres.jpg"
+                        alt="realcourseimg"
+                      />
+                      <div class="cart__related-item__tags">
+                        <span>NEW</span>
+                        <span>SOLD</span>
+                      </div>
+                    </div>
+                    <div class="cart__related-item-content">
+                      <div class="cart__related-content__header">
+                        <div class="cart__related-content__header-top">
+                          <h4>NEGOTIATION TALK</h4>
+                          <p>$200</p>
+                        </div>
+                        <div class="cart__related-content__feature">
+                          <p>
+                            <i class="fa fa-calendar-alt"></i>
+                            <span>3M 2H</span>
+                          </p>
+                          <p>
+                            <i class="fa fa-user"></i>
+                            <span>JOHN LEGEND</span>
+                          </p>
+                          <p>
+                            <i class="fa fa-graduation-cap"></i>
+                            <span>BEGINER</span>
+                          </p>
+                        </div>
+                      </div>
+                      <div class="cart__related-content__para">
+                        Explore the legal issues involved in real estate law,
+                        from investing to title examinations. You'll not only
+                        master the essentials, but you' ll receive hands-on
+                        application on.
+                      </div>
+                      <button class="btn btn-applycourse">APPLY NOW</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- movetotop -->
+      <div class="movetotop">
+        <a href="#top1">
+          <i class="fas fa-arrow-circle-up"></i>
+        </a>
+      </div>
+      <!-- img larger -->
+      <div class="footer-img__larger">
+        <div class="footer-img__larger-inner">
+          <img src="" alt="" class="img-footer-larger" />
+          <div class="close__imglarger">
+            <i class="fas fa-times-circle"></i>
+          </div>
+          <div class="larger-btns">
+            <i class="fa fa-chevron-left btn-prev-larger"></i>
+            <i class="fas fa-th-large btn-larger-gallery"></i>
+            <i class="fa fa-chevron-right btn-next-larger"></i>
+          </div>
+        </div>
+        <div class="larger-list__img">
+          <div class="larger-list__img-inner">
+            <div class="close__larger-img">
+              <i class="fa fa-times"></i>
+            </div>
+            <div class="color-header"></div>
+            <div class="gallery-larger-img">
+              <img
+                src="assets/image/largerImg/largerimg1.jpg"
+                alt="footerimg1"
+              />
+              <img
+                src="assets/image/largerImg/largerimg2.jpg"
+                alt="footerimg2"
+              />
+              <img
+                src="assets/image/largerImg/largerimg3.jpg"
+                alt="footerimg3"
+              />
+              <img
+                src="assets/image/largerImg/largerimg4.jpg"
+                alt="footerimg4"
+              />
+              <img
+                src="assets/image/largerImg/largerimg5.jpg"
+                alt="footerimg5"
+              />
+              <img
+                src="assets/image/largerImg/largerimg6.jpg"
+                alt="footerimg6"
+              />
+              <img
+                src="assets/image/largerImg/largerimg7.jpg"
+                alt="footerimg7"
+              />
+              <img
+                src="assets/image/largerImg/largerimg8.jpg"
+                alt="footerimg8"
+              />
+              <img
+                src="assets/image/largerImg/largerimg9.jpg"
+                alt="footerimg9"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer -->
+      <footer class="footer">
+        <div class="row">
+          <div class="footer-details">
+            <div class="footer__logo">
+              <a href="index.html" class="footer__logo-link">
+                <img
+                  src="assets/image/footer-logo.png"
+                  alt="academica_logo"
+                  class="footer__logo-img"
+                />
+              </a>
+            </div>
+            <div class="footer__top">
+              <div class="footer__top-left">
+                <div class="footer__top-left-top">
+                  <h4 class="footer__heading">ABOUT US</h4>
+                  <p class="footer__desc">
+                    We are an experienced team creating great, unique and easy
+                    to set up templates for WordPress. We are a small, young and
+                    super driven team that likes to make great things happen.
+                  </p>
+                </div>
+                <div class="footer__top-left-bottom">
+                  <h4 class="footer__heading">GET IN TOUCH</h4>
+                  <ul class="footer-social__info">
+                    <li class="footer-social__item">
+                      <i class="fa fa-map-marked"></i>
+                      <span>
+                        G5 Technology JSC, Room 1101, Glory Palace Apartment,
+                        Truong Thi Ward, Vinh City, Nghe An Province,
+                        VietNam(42000)
+                      </span>
+                    </li>
+                    <li class="footer-social__item">
+                      <i class="fa fa-phone"></i>
+                      <span>(+84) 388-969-888 </span>
+                    </li>
+                    <li class="footer-social__item">
+                      <i class="fa fa-envelope"></i>
+                      <span>Academica@gmail.com</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer__top-right">
+                <div class="footer__top-right-top">
+                  <h4 class="footer__heading">NEWSLETTER</h4>
+                  <form action="" class="footer-form">
+                    <input type="text" placeholder="YOUR NAME" />
+                    <input type="email" placeholder="EMAIL ADDRESS" />
+                    <button type="button">THANK YOU</button>
+                  </form>
+                </div>
+                <div class="footer__top-right-bottom">
+                  <h4 class="footer__heading">OUR FLICKR</h4>
+                  <div class="footer__gallery">
+                    <img
+                      src="assets/image/largerImg/largerimg1.jpg"
+                      alt="footerimg1"
+                    />
+                    <img
+                      src="assets/image/largerImg/largerimg2.jpg"
+                      alt="footerimg2"
+                    />
+                    <img
+                      src="assets/image/largerImg/largerimg3.jpg"
+                      alt="footerimg3"
+                    />
+                    <img
+                      src="assets/image/largerImg/largerimg4.jpg"
+                      alt="footerimg4"
+                    />
+                    <img
+                      src="assets/image/largerImg/largerimg5.jpg"
+                      alt="footerimg5"
+                    />
+                    <img
+                      src="assets/image/largerImg/largerimg6.jpg"
+                      alt="footerimg6"
+                    />
+                    <img
+                      src="assets/image/largerImg/largerimg7.jpg"
+                      alt="footerimg7"
+                    />
+                    <img
+                      src="assets/image/largerImg/largerimg8.jpg"
+                      alt="footerimg8"
+                    />
+                    <img
+                      src="assets/image/largerImg/largerimg9.jpg"
+                      alt="footerimg9"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer__bottom">
+              <nav class="footer__nav">
+                <ul class="footer__nav-list">
+                  <li class="footer__nav-item">
+                    <a href="index.html" class="footer__nav-link">HOME</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="course.html" class="footer__nav-link">COURSE</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="event.html" class="footer__nav-link">EVENTS</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="blog.html" class="footer__nav-link">BLOG</a>
+                  </li>
+                  <li class="footer__nav-item">
+                    <a href="about.html" class="footer__nav-link">ABOUT</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/home.js"></script>
+    <script src="assets/js/blog.js"></script>
+  </body>
+</html>

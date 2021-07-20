@@ -160,3 +160,9 @@
         choseActive(index,btn__loginType)
      })
     }) 
+// Cart form
+const btn__OpenCart   = document.querySelector(".cart__icon");
+const cart__container = document.querySelector(".cart__container");
+btn__OpenCart.addEventListener("click",function(){
+  cart__container.classList.toggle("active");
+})
